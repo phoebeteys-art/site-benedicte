@@ -543,6 +543,10 @@ footer{background:#2B2029}
 .caves-galerie{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(8px,1.2vw,14px)}
 .caves-galerie img{width:100%;aspect-ratio:4/5;object-fit:cover;display:block;border-radius:2px;box-shadow:0 1px 2px rgba(33,30,37,.12),0 12px 28px -8px rgba(33,30,37,.25)}
 @media (max-width:760px){.caves-galerie{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.lieu-axa-photos{aspect-ratio:auto;display:grid;grid-template-columns:2fr 1fr;gap:6px;background:var(--papier)}
+.lieu-axa-photos img{width:100%;height:100%;aspect-ratio:3/4;object-fit:cover;display:block}
+.lieu-axa-photos img:first-child{object-position:45% 60%}
+.lieu-axa-photos img:last-child{object-position:50% 20%}
 </style>
 
 <header>
@@ -1055,7 +1059,7 @@ footer{background:#2B2029}
     <a class="retour" href="#accueil">&#8592; Retour à l'accueil</a>
     <div class="lieux" id="lieux">
       <article class="lieu">
-        <div class="lieu-visuel lieu-axa" aria-hidden="true"><span class="lieu-date"><b>Automne</b>2026</span></div>
+        <div class="lieu-visuel lieu-axa-photos"><img src="img/axa-vitrine.jpg" alt="Deux toiles Sainte-Victoire sur chevalets dans la vitrine de l'agence AXA, à Aix-en-Provence" loading="lazy"><img src="img/axa-premiss.jpg" alt="Pré-Miss, encadrée, exposée sur un chevalet dans la vitrine de l'agence" loading="lazy"></div>
         <div class="lieu-texte">
           <p class="eyebrow">Exposition en cours</p>
           <h2><span class="touche t-lav">Agence AXA P. Chabert</span></h2>
