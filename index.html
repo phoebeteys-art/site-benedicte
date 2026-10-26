@@ -547,6 +547,35 @@ footer{background:#2B2029}
 .lieu-axa-photos img{width:100%;height:100%;aspect-ratio:3/4;object-fit:cover;display:block}
 .lieu-axa-photos img:first-child{object-position:45% 60%}
 .lieu-axa-photos img:last-child{object-position:50% 20%}
+
+/* ===== Mobile first : vues compactes sur téléphone ===== */
+@media (max-width:600px){
+  /* Hero d'accueil plus court */
+  .slides{aspect-ratio:1/1;max-height:62svh}
+  .hero-text{padding-block:18px 64px}
+  .hero-text h2,.hero-text h1{font-size:clamp(1.7rem,8vw,2.2rem)}
+  /* Collections : 2 colonnes, cartes compactes */
+  .cards{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+  .card{aspect-ratio:3/4}
+  .card .label{padding:12px;gap:3px}
+  .card .label span{display:none}
+  .card .label strong{font-size:1.08rem;line-height:1.15}
+  .card .label em{font-size:.5rem;letter-spacing:.2em}
+  .collections .eyebrow+h2,.collections h2{font-size:clamp(1.8rem,9vw,2.3rem)}
+  /* Hero des pages collection et Où voir : compacts */
+  .hero-inner{min-height:0;padding-block:28px 26px;gap:12px}
+  .hero-panneau{font-size:.88rem;line-height:1.6;gap:.7em}
+  .hero-panneau h1{font-size:clamp(1.9rem,9vw,2.4rem)}
+  .hero-dialogue{font-size:1.02rem}
+  .hero-legende{display:none}
+  .hero-panneau.replie > p:not(.hero-dialogue) ~ p:not(.hero-dialogue){display:none}
+  .hero-panneau.replie > p:not(.hero-dialogue){display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+  .lire-suite{justify-self:start;background:none;border:0;padding:4px 0;color:#fff;font:inherit;font-size:.66rem;letter-spacing:.22em;text-transform:uppercase;border-bottom:1px solid rgba(255,255,255,.6);cursor:pointer}
+  .hero-pied{gap:12px}
+  /* Bio : portrait plus petit */
+  .portrait{max-width:240px;margin-inline:auto}
+}
+@media (min-width:601px){.lire-suite{display:none}}
 </style>
 
 <header>
@@ -1176,6 +1205,21 @@ footer{background:#2B2029}
   window.addEventListener('hashchange',function(){if(!lb.hidden)lbClose()});
 })();
 </script>
+<script>
+/* Mobile : texte des hero replié avec « Lire la suite » */
+(function(){
+  document.querySelectorAll('.hero-panneau').forEach(function(p){
+    var paras=[].filter.call(p.children,function(c){return c.tagName==='P'&&!c.classList.contains('hero-dialogue')});
+    if(!paras.length) return;
+    var b=document.createElement('button');b.type='button';b.className='lire-suite';b.textContent='Lire la suite';
+    b.setAttribute('aria-expanded','false');
+    p.classList.add('replie');
+    paras[paras.length-1].after(b);
+    b.addEventListener('click',function(){var o=p.classList.toggle('replie');b.textContent=o?'Lire la suite':'Réduire';b.setAttribute('aria-expanded',String(!o))});
+  });
+})();
+</script>
+
 
 </body>
 </html>
