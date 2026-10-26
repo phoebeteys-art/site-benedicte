@@ -1,0 +1,6 @@
+Site de Bénédicte Teyssandier-Grézard
+- index.html : le site
+- img/ : les images
+
+Voir le site : double-cliquez sur index.html, ou en serveur local : python3 -m http.server 8000 puis http://localhost:8000
+Mettre en ligne : déposez le dossier complet chez un hébergeur statique (Netlify, OVH, o2switch...).
