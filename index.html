@@ -9,7 +9,7 @@
 <body>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Italiana&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Cormorant:ital,wght@0,400;0,500;1,400;1,500&family=Jost:wght@300;400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Italiana&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Cormorant:ital,wght@0,400;0,500;1,400;1,500&family=Jost:wght@300;400;500&family=Parisienne&family=Great+Vibes&display=swap">
 <style>
 /* Layout : accueil défilant, lettre du QR code, cartes portrait des collections ; chaque collection ouvre sa propre page avec cartels et prix */
 :root{
@@ -438,48 +438,48 @@ footer{background:#2B2029}
 @media (max-width:420px){.brand span:last-child{display:inline;font-size:.72rem;letter-spacing:.1em}.brand .sig{display:none}.brand{min-width:0}.brand span:last-child{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}}
 
 /* ===== Taches de peinture réalistes ===== */
-.lettre::before{background:url("img/tache-rose.png") center/contain no-repeat;aspect-ratio:640/203;width:clamp(200px,24vw,330px);left:max(0px,calc(50% - 660px));top:clamp(20px,4vw,48px);opacity:1;transform:rotate(-14deg)}
-.bio::after{background:url("img/tache-lavande.png") center/contain no-repeat;aspect-ratio:640/203;width:clamp(190px,22vw,310px);right:max(0px,calc(50% - 680px));bottom:clamp(24px,5vw,64px);opacity:1;transform:rotate(-8deg)}
-.contact::after{background:url("img/tache-ocre.png") center/contain no-repeat;aspect-ratio:640/203;width:clamp(170px,20vw,280px);right:max(8px,calc(50% - 620px));top:clamp(36px,6vw,80px);opacity:1;transform:rotate(12deg)}
+.lettre::before{background:url("img/vif-tache-rose.webp") center/contain no-repeat;aspect-ratio:640/203;width:clamp(200px,24vw,330px);left:max(0px,calc(50% - 660px));top:clamp(20px,4vw,48px);opacity:1;transform:rotate(-14deg)}
+.bio::after{background:url("img/vif-tache-lavande.webp") center/contain no-repeat;aspect-ratio:640/203;width:clamp(190px,22vw,310px);right:max(0px,calc(50% - 680px));bottom:clamp(24px,5vw,64px);opacity:1;transform:rotate(-8deg)}
+.contact::after{background:url("img/vif-tache-ocre.webp") center/contain no-repeat;aspect-ratio:640/203;width:clamp(170px,20vw,280px);right:max(8px,calc(50% - 620px));top:clamp(36px,6vw,80px);opacity:1;transform:rotate(12deg)}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .lettre::before,:root:not([data-theme="light"]) .bio::after,:root:not([data-theme="light"]) .contact::after{opacity:.8}}
 :root[data-theme="dark"] .lettre::before,:root[data-theme="dark"] .bio::after,:root[data-theme="dark"] .contact::after{opacity:.8}
 @media (max-width:700px){.lettre::before,.bio::after,.contact::after{opacity:.8}}
 
 /* ===== Traits de vraie peinture (tirés de ses toiles) ===== */
-.touche::before{background-image:url("img/trait-orange.png");background-size:100% 100%;height:.5em;top:74%;left:-.2em;width:calc(100% + .4em);opacity:.62;transform:translateY(-50%) rotate(-1.5deg)}
-.t-lav::before{background-image:url("img/trait-lavande.png")}
-.t-ocre::before{background-image:url("img/trait-ocre.png")}
-.t-rose::before{background-image:url("img/trait-rouge.png");opacity:.5}
+.touche::before{background-image:url("img/vif-trait-orange.webp");background-size:100% 100%;height:.5em;top:74%;left:-.2em;width:calc(100% + .4em);opacity:.62;transform:translateY(-50%) rotate(-1.5deg)}
+.t-lav::before{background-image:url("img/vif-trait-lavande.webp")}
+.t-ocre::before{background-image:url("img/vif-trait-ocre.webp")}
+.t-rose::before{background-image:url("img/vif-trait-rouge.webp");opacity:.5}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .touche::before{opacity:.5}}
 :root[data-theme="dark"] .touche::before{opacity:.5}
-.hero-titre h1{background:url("img/trait-orange.png") no-repeat 0 92%/100% .26em;-webkit-box-decoration-break:clone;box-decoration-break:clone}
-.cta-contact p{background:url("img/trait-lavande.png") no-repeat 0 96%/100% .32em}
-.pied-nom{background:url("img/trait-rouge.png") no-repeat 0 100%/100% .4em}
-.bio::before,.contact::before{background:url("img/trait-lavande.png") center/100% 100% no-repeat;height:26px;opacity:.85}
-.contact::before{background-image:url("img/trait-orange.png")}
+.hero-titre h1{background:url("img/vif-trait-orange.webp") no-repeat 0 92%/100% .26em;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.cta-contact p{background:url("img/vif-trait-lavande.webp") no-repeat 0 96%/100% .32em}
+.pied-nom{background:url("img/vif-trait-rouge.webp") no-repeat 0 100%/100% .4em}
+.bio::before,.contact::before{background:url("img/vif-trait-lavande.webp") center/100% 100% no-repeat;height:26px;opacity:.85}
+.contact::before{background-image:url("img/vif-trait-orange.webp")}
 
 /* ===== Éclaboussures de peinture (tirées de ses toiles) ===== */
-.collections::before{content:"";position:absolute;z-index:-1;pointer-events:none;width:clamp(110px,13vw,180px);aspect-ratio:1;left:max(-30px,calc(50% - 720px));top:clamp(10px,2vw,30px);background:url("img/splat-turquoise.png") center/contain no-repeat;opacity:.9;transform:rotate(20deg)}
-.collections::after{content:"";position:absolute;z-index:-1;pointer-events:none;width:clamp(130px,15vw,210px);aspect-ratio:1;right:max(-40px,calc(50% - 720px));bottom:clamp(-20px,1vw,20px);background:url("img/splat-orange.png") center/contain no-repeat;opacity:.95;transform:rotate(-30deg)}
-.lettre::after{content:"";position:absolute;z-index:-1;pointer-events:none;width:clamp(90px,10vw,140px);aspect-ratio:1;right:max(0px,calc(50% - 680px));bottom:clamp(10px,3vw,40px);background:url("img/splat-ocre.png") center/contain no-repeat;opacity:.9;transform:rotate(40deg)}
+.collections::before{content:"";position:absolute;z-index:-1;pointer-events:none;width:clamp(110px,13vw,180px);aspect-ratio:1;left:max(-30px,calc(50% - 720px));top:clamp(10px,2vw,30px);background:url("img/vif-splat-turquoise.webp") center/contain no-repeat;opacity:.9;transform:rotate(20deg)}
+.collections::after{content:"";position:absolute;z-index:-1;pointer-events:none;width:clamp(130px,15vw,210px);aspect-ratio:1;right:max(-40px,calc(50% - 720px));bottom:clamp(-20px,1vw,20px);background:url("img/vif-splat-orange.webp") center/contain no-repeat;opacity:.95;transform:rotate(-30deg)}
+.lettre::after{content:"";position:absolute;z-index:-1;pointer-events:none;width:clamp(90px,10vw,140px);aspect-ratio:1;right:max(0px,calc(50% - 680px));bottom:clamp(10px,3vw,40px);background:url("img/vif-splat-ocre.webp") center/contain no-repeat;opacity:.9;transform:rotate(40deg)}
 .bio-inner{position:relative;isolation:isolate}
-.bio-inner::before{content:"";position:absolute;z-index:-1;pointer-events:none;width:clamp(110px,12vw,170px);aspect-ratio:1;left:clamp(-70px,-4vw,-20px);top:clamp(-50px,-3vw,-20px);background:url("img/splat-rouge.png") center/contain no-repeat;opacity:.9;transform:rotate(-15deg)}
+.bio-inner::before{content:"";position:absolute;z-index:-1;pointer-events:none;width:clamp(110px,12vw,170px);aspect-ratio:1;left:clamp(-70px,-4vw,-20px);top:clamp(-50px,-3vw,-20px);background:url("img/vif-splat-rouge.webp") center/contain no-repeat;opacity:.9;transform:rotate(-15deg)}
 .page{position:relative;isolation:isolate}
-.page::after{content:"";position:absolute;z-index:-1;pointer-events:none;width:clamp(110px,12vw,170px);aspect-ratio:1;right:clamp(-40px,-2vw,0px);bottom:clamp(20px,5vw,70px);background:url("img/splat-lavande.png") center/contain no-repeat;opacity:.9;transform:rotate(25deg)}
+.page::after{content:"";position:absolute;z-index:-1;pointer-events:none;width:clamp(110px,12vw,170px);aspect-ratio:1;right:clamp(-40px,-2vw,0px);bottom:clamp(20px,5vw,70px);background:url("img/vif-splat-lavande.webp") center/contain no-repeat;opacity:.9;transform:rotate(25deg)}
 .wrap.page{overflow-x:clip}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .collections::before,:root:not([data-theme="light"]) .collections::after,:root:not([data-theme="light"]) .lettre::after,:root:not([data-theme="light"]) .bio-inner::before,:root:not([data-theme="light"]) .page::after{opacity:.7}}
 :root[data-theme="dark"] .collections::before,:root[data-theme="dark"] .collections::after,:root[data-theme="dark"] .lettre::after,:root[data-theme="dark"] .bio-inner::before,:root[data-theme="dark"] .page::after{opacity:.7}
 @media (max-width:700px){.collections::before,.collections::after,.lettre::after,.bio-inner::before,.page::after{width:96px;opacity:.75}}
 /* petites touches en vraie peinture (survol cartes, menu, sur-titres) */
-.card .label strong{background-image:url("img/trait-orange.png")}
-.card:nth-child(5n+2) .label strong{background-image:url("img/trait-ocre.png")}
-.card:nth-child(5n+3) .label strong{background-image:url("img/trait-lavande.png")}
-.card:nth-child(5n+4) .label strong{background-image:url("img/trait-rouge.png")}
-.card:nth-child(5n) .label strong{background-image:url("img/trait-lavande.png")}
-.nav ul a,.menu-btn{background-image:url("img/trait-orange.png")}
+.card .label strong{background-image:url("img/vif-trait-orange.webp")}
+.card:nth-child(5n+2) .label strong{background-image:url("img/vif-trait-ocre.webp")}
+.card:nth-child(5n+3) .label strong{background-image:url("img/vif-trait-lavande.webp")}
+.card:nth-child(5n+4) .label strong{background-image:url("img/vif-trait-rouge.webp")}
+.card:nth-child(5n) .label strong{background-image:url("img/vif-trait-lavande.webp")}
+.nav ul a,.menu-btn{background-image:url("img/vif-trait-orange.webp")}
 .nav ul a:hover,.menu-btn:hover,.has-menu.open .menu-btn{background-size:115% 40%}
-.menu a:hover{background:url("img/trait-lavande.png") no-repeat 1.2em 80%/60% 34%,var(--calcaire)}
-.eyebrow::before{width:38px;height:9px;background:url("img/trait-orange.png") center/100% 100% no-repeat}
+.menu a:hover{background:url("img/vif-trait-lavande.webp") no-repeat 1.2em 80%/60% 34%,var(--calcaire)}
+.eyebrow::before{width:38px;height:9px;background:url("img/vif-trait-orange.webp") center/100% 100% no-repeat}
 @media (max-width:860px){.nav ul>li>a,.nav ul .menu-btn{background:none!important}}
 .collections{isolation:isolate}
 .bio-inner::before{left:clamp(-40px,-2vw,-10px)}
@@ -489,34 +489,34 @@ footer{background:#2B2029}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--calcaire:#16151B;--papier:#1D1C23;--rosee:#1E1D27;--ciel:#A9B3F2;--signe:#B9C0F5;--ligne:#33313B}}
 :root[data-theme="dark"]{--calcaire:#16151B;--papier:#1D1C23;--rosee:#1E1D27;--ciel:#A9B3F2;--signe:#B9C0F5;--ligne:#33313B}
 .lettre::before,.lettre::after,.bio::after,.bio-inner::before,.contact::after,.collections::before,.collections::after,.page::after{mix-blend-mode:multiply;transform:none}
-.lettre::before{background-image:url("img/lavis-outremer.png");aspect-ratio:1;width:clamp(220px,24vw,320px);left:max(-40px,calc(50% - 700px));top:clamp(10px,3vw,40px);opacity:.72}
-.lettre::after{background-image:url("img/lavis-ocre.png");width:clamp(150px,15vw,210px);right:max(-20px,calc(50% - 690px));bottom:clamp(0px,2vw,30px);opacity:.75}
-.collections::before{background-image:url("img/lavis-lavande.png");width:clamp(200px,22vw,300px);left:max(-60px,calc(50% - 760px));top:clamp(-20px,0vw,10px);opacity:.75}
-.collections::after{background-image:url("img/lavis-corail.png");width:clamp(180px,20vw,270px);right:max(-60px,calc(50% - 760px));bottom:clamp(-40px,-1vw,0px);opacity:.72}
-.bio::after{background-image:url("img/lavis-lavande.png");aspect-ratio:1;width:clamp(170px,18vw,240px);opacity:.72}
-.bio-inner::before{background-image:url("img/lavis-corail.png");width:clamp(150px,15vw,210px);left:clamp(-80px,-5vw,-30px);top:clamp(-60px,-4vw,-20px);opacity:.68}
-.contact::after{background-image:url("img/lavis-ocre.png");aspect-ratio:1;width:clamp(160px,17vw,230px);opacity:.75}
-.page::after{background-image:url("img/lavis-outremer.png");width:clamp(170px,17vw,240px);opacity:.6}
-.touche::before{background-image:url("img/bande-ocre.png");height:.55em;opacity:.7;mix-blend-mode:multiply;transform:translateY(-50%) rotate(-1deg)}
-.t-lav::before{background-image:url("img/bande-lavande.png")}
-.t-ocre::before{background-image:url("img/bande-corail.png")}
-.t-rose::before{background-image:url("img/bande-outremer.png");opacity:.72}
-.hero-titre h1{background-image:url("img/bande-ocre.png")}
-.cta-contact p{background-image:url("img/bande-lavande.png")}
-.pied-nom{background-image:url("img/bande-corail.png")}
-.bio::before,.contact::before{background-image:url("img/bande-lavande.png");mix-blend-mode:multiply;opacity:.75}
-.contact::before{background-image:url("img/bande-ocre.png")}
-.eyebrow::before{background-image:url("img/bande-outremer.png");mix-blend-mode:multiply}
-.card .label strong{background-image:url("img/bande-ocre.png")}
-.card:nth-child(5n+2) .label strong{background-image:url("img/bande-corail.png")}
-.card:nth-child(5n+3) .label strong,.card:nth-child(5n) .label strong{background-image:url("img/bande-lavande.png")}
-.card:nth-child(5n+4) .label strong{background-image:url("img/bande-outremer.png")}
-.nav ul a,.menu-btn{background-image:url("img/bande-ocre.png")}
-.menu a:hover{background:url("img/bande-lavande.png") no-repeat 1.2em 80%/60% 34%,var(--calcaire)}
+.lettre::before{background-image:url("img/vif-lavis-outremer.webp");aspect-ratio:1;width:clamp(220px,24vw,320px);left:max(-40px,calc(50% - 700px));top:clamp(10px,3vw,40px);opacity:.72}
+.lettre::after{background-image:url("img/vif-lavis-ocre.webp");width:clamp(150px,15vw,210px);right:max(-20px,calc(50% - 690px));bottom:clamp(0px,2vw,30px);opacity:.75}
+.collections::before{background-image:url("img/vif-lavis-lavande.webp");width:clamp(200px,22vw,300px);left:max(-60px,calc(50% - 760px));top:clamp(-20px,0vw,10px);opacity:.75}
+.collections::after{background-image:url("img/vif-lavis-corail.webp");width:clamp(180px,20vw,270px);right:max(-60px,calc(50% - 760px));bottom:clamp(-40px,-1vw,0px);opacity:.72}
+.bio::after{background-image:url("img/vif-lavis-lavande.webp");aspect-ratio:1;width:clamp(170px,18vw,240px);opacity:.72}
+.bio-inner::before{background-image:url("img/vif-lavis-corail.webp");width:clamp(150px,15vw,210px);left:clamp(-80px,-5vw,-30px);top:clamp(-60px,-4vw,-20px);opacity:.68}
+.contact::after{background-image:url("img/vif-lavis-ocre.webp");aspect-ratio:1;width:clamp(160px,17vw,230px);opacity:.75}
+.page::after{background-image:url("img/vif-lavis-outremer.webp");width:clamp(170px,17vw,240px);opacity:.6}
+.touche::before{background-image:url("img/vif-bande-ocre.webp");height:.55em;opacity:.7;mix-blend-mode:multiply;transform:translateY(-50%) rotate(-1deg)}
+.t-lav::before{background-image:url("img/vif-bande-lavande.webp")}
+.t-ocre::before{background-image:url("img/vif-bande-corail.webp")}
+.t-rose::before{background-image:url("img/vif-bande-outremer.webp");opacity:.72}
+.hero-titre h1{background-image:url("img/vif-bande-ocre.webp")}
+.cta-contact p{background-image:url("img/vif-bande-lavande.webp")}
+.pied-nom{background-image:url("img/vif-bande-corail.webp")}
+.bio::before,.contact::before{background-image:url("img/vif-bande-lavande.webp");mix-blend-mode:multiply;opacity:.75}
+.contact::before{background-image:url("img/vif-bande-ocre.webp")}
+.eyebrow::before{background-image:url("img/vif-bande-outremer.webp");mix-blend-mode:multiply}
+.card .label strong{background-image:url("img/vif-bande-ocre.webp")}
+.card:nth-child(5n+2) .label strong{background-image:url("img/vif-bande-corail.webp")}
+.card:nth-child(5n+3) .label strong,.card:nth-child(5n) .label strong{background-image:url("img/vif-bande-lavande.webp")}
+.card:nth-child(5n+4) .label strong{background-image:url("img/vif-bande-outremer.webp")}
+.nav ul a,.menu-btn{background-image:url("img/vif-bande-ocre.webp")}
+.menu a:hover{background:url("img/vif-bande-lavande.webp") no-repeat 1.2em 80%/60% 34%,var(--calcaire)}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .lettre::before,:root:not([data-theme="light"]) .lettre::after,:root:not([data-theme="light"]) .bio::after,:root:not([data-theme="light"]) .bio-inner::before,:root:not([data-theme="light"]) .contact::after,:root:not([data-theme="light"]) .collections::before,:root:not([data-theme="light"]) .collections::after,:root:not([data-theme="light"]) .page::after,:root:not([data-theme="light"]) .touche::before{mix-blend-mode:screen;opacity:.35}}
 :root[data-theme="dark"] .lettre::before,:root[data-theme="dark"] .lettre::after,:root[data-theme="dark"] .bio::after,:root[data-theme="dark"] .bio-inner::before,:root[data-theme="dark"] .contact::after,:root[data-theme="dark"] .collections::before,:root[data-theme="dark"] .collections::after,:root[data-theme="dark"] .page::after,:root[data-theme="dark"] .touche::before{mix-blend-mode:screen;opacity:.35}
 @media (max-width:700px){.lettre::before,.collections::before,.collections::after,.bio::after,.bio-inner::before,.contact::after,.lettre::after,.page::after{width:130px;opacity:.4}}
-.roue{background:url("img/lavis-ocre.png") 78% 82%/52% auto no-repeat,url("img/lavis-corail.png") 24% 70%/48% auto no-repeat,url("img/lavis-lavande.png") 70% 22%/56% auto no-repeat,url("img/lavis-outremer.png") 18% 18%/58% auto no-repeat,var(--papier);background-blend-mode:multiply}
+.roue{background:url("img/vif-lavis-ocre.webp") 78% 82%/52% auto no-repeat,url("img/vif-lavis-corail.webp") 24% 70%/48% auto no-repeat,url("img/vif-lavis-lavande.webp") 70% 22%/56% auto no-repeat,url("img/vif-lavis-outremer.webp") 18% 18%/58% auto no-repeat,var(--papier);background-blend-mode:multiply}
 .roue::before{content:none}
 @media (max-width:680px){.roue{min-height:0;aspect-ratio:16/10}.carte{max-width:100%}}
 @media (max-width:560px){.hero-text{padding-inline:22px;padding-block:22px 72px}.hero-text p{letter-spacing:.16em}.hero-ctrl{bottom:16px}}
@@ -576,6 +576,122 @@ footer{background:#2B2029}
   .portrait{max-width:240px;margin-inline:auto}
 }
 @media (min-width:601px){.lire-suite{display:none}}
+
+/* Hero court des pages de collection */
+.hero-court .hero-inner{min-height:clamp(240px,36vh,360px);padding-block:clamp(28px,4vw,48px)}
+.hero-court .hero-panneau{gap:.6em}
+@media (max-width:600px){.hero-court .hero-inner{min-height:200px;padding-block:24px 22px}}
+.hero-court .hero-pied,.hero-court .hero-legende,.hero-court .lire-suite{display:none}
+.hero-court .hero-titre{border:0;padding:0}
+
+/* ===== Bio en bulles de discussion sur fond aquarelle ===== */
+.bio-bulles{background:#fff url("img/bio-aquarelle.jpg") center/cover no-repeat;padding-block:clamp(48px,8vw,96px);color:#2a2230}
+.bio-bulles::before,.bio-bulles::after{display:none!important}
+.bio-fil{max-width:720px;margin:0 auto;padding-inline:16px}
+.bio-bulles .eyebrow{text-align:center;color:#2a2230}
+.bio-bulles h2{text-align:center;margin:6px 0 clamp(24px,4vw,40px);color:#2a2230}
+.bulles{display:flex;flex-direction:column;gap:clamp(14px,2.4vw,22px)}
+.bulle{position:relative;margin:0;max-width:min(88%,470px);background:#fff;border-radius:18px;padding:14px 20px;text-align:center;font-family:var(--display);font-weight:600;font-size:clamp(1rem,2.4vw,1.14rem);line-height:1.4;color:#1f1a24;box-shadow:0 4px 18px rgba(80,30,60,.12)}
+.bulle.g{align-self:flex-start;border-bottom-left-radius:6px}
+.bulle.d{align-self:flex-end;border-bottom-right-radius:6px}
+.bulle.g::after,.bulle.d::after{content:"";position:absolute;bottom:0;width:14px;height:14px;background:#fff}
+.bulle.g::after{left:-6px;clip-path:polygon(100% 0,100% 100%,0 100%)}
+.bulle.d::after{right:-6px;clip-path:polygon(0 0,100% 100%,0 100%)}
+.bio-fin{font-family:"Parisienne","Cormorant Garamond",cursive;font-size:clamp(2.2rem,7vw,3.4rem);text-align:center;margin:clamp(30px,5vw,48px) 0 6px;color:#1f1a24;line-height:1.1}
+.bio-sig{display:block;margin:0 auto;height:3.4rem;color:#1f1a24}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .bio-bulles{filter:brightness(.92)}}
+.bio-bulles .eyebrow{display:flex;justify-content:center}
+@media (max-width:600px){.bulle{font-size:.95rem;padding:12px 16px;max-width:90%}}
+
+/* Bio compacte : grille 2 colonnes (ordi), carrousel à glisser (mobile) */
+.bio-bulles{padding-block:clamp(40px,6vw,72px)}
+.bio-fil{max-width:900px}
+.bio-bulles h2{font-size:clamp(1.8rem,4vw,2.4rem);margin-bottom:clamp(18px,3vw,28px)}
+.bulles{display:grid;grid-template-columns:1fr 1fr;gap:14px 28px;align-items:start}
+.bulle{max-width:none;font-size:.98rem;line-height:1.38;padding:12px 18px;font-weight:600}
+.bulle.g{justify-self:stretch}
+.bulle.d{justify-self:stretch;transform:translateY(28px)}
+.bulle.d:last-child{grid-column:2;justify-self:end;width:auto}
+.bio-fin{margin-top:clamp(40px,5vw,56px);font-size:clamp(2rem,5vw,2.8rem)}
+.bio-sig{height:2.8rem}
+.bio-glisse{display:none}
+@media (max-width:700px){
+  .bulles{display:flex;grid-template-columns:none;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 16px 18px;margin-inline:-16px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .bulles::-webkit-scrollbar{display:none}
+  .bulle,.bulle.d,.bulle.g,.bulle.d:last-child{flex:0 0 78%;scroll-snap-align:center;transform:none;align-self:center;font-size:.95rem;width:auto}
+  .bulle.d:last-child{flex-basis:40%}
+  .bio-glisse{display:block;text-align:center;font-size:.62rem;letter-spacing:.24em;text-transform:uppercase;color:#2a2230;opacity:.75;margin-top:4px}
+  .bio-fin{margin-top:18px}
+}
+@media (prefers-reduced-motion:reduce){.bulle{transform:none!important}}
+@media (max-width:700px){.bio-bulles .bulles{flex-direction:row;align-items:center}}
+.bulle.d{transform:translateY(16px)}
+@media (max-width:700px){.bulle.d{transform:none}}
+
+/* ===== Bio v2 : fil de messages moderne, fond du site + lavis vifs ===== */
+.bio2{position:relative;isolation:isolate;overflow:clip;padding-block:clamp(56px,8vw,112px);background:var(--calcaire)}
+.bio2::before,.bio2::after{content:"";position:absolute;z-index:-1;pointer-events:none;background:center/contain no-repeat;mix-blend-mode:multiply}
+.bio2::before{width:clamp(220px,28vw,420px);aspect-ratio:1;left:-90px;top:-60px;background-image:url("img/vif-lavis-ocre.webp");opacity:.75}
+.bio2::after{width:clamp(200px,24vw,360px);aspect-ratio:1;right:-70px;bottom:-50px;background-image:url("img/vif-lavis-corail.webp");opacity:.6}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .bio2::before,:root:not([data-theme="light"]) .bio2::after{mix-blend-mode:screen;opacity:.3}}
+.bio2-inner{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(32px,6vw,96px);align-items:start}
+.bio2-intro{position:sticky;top:110px}
+.bio2 h2{font-family:var(--display);font-weight:300;font-size:clamp(2.4rem,5vw,3.6rem);line-height:1.02;margin:10px 0 18px}
+.bio2 h2 em{color:var(--ciel)}
+.bio2-chapo{font-size:1rem;line-height:1.7;color:var(--gris);max-width:36ch;margin:0 0 28px}
+.bio2-fin{font-family:"Parisienne","Cormorant Garamond",cursive;font-size:clamp(1.9rem,3vw,2.4rem);line-height:1.1;margin:0 0 6px;color:var(--encre)}
+.bio2-sig{height:3rem;color:var(--signe)}
+.bio2-fil{display:flex;flex-direction:column;gap:10px;max-width:560px;justify-self:end;width:100%}
+.msg{--t:#FFE27A;position:relative;margin:0;max-width:82%;padding:13px 18px;border-radius:22px;font-family:var(--sans);font-size:.95rem;line-height:1.55;color:#22212B;background:color-mix(in srgb,var(--t) 30%,var(--papier));box-shadow:0 1px 1px rgba(34,33,43,.04),0 8px 24px -14px rgba(34,33,43,.25);opacity:0;transform:translateY(12px);transition:opacity .6s ease,transform .6s ease}
+.msg:nth-of-type(odd){align-self:flex-start;border-bottom-left-radius:6px}
+.msg:nth-of-type(even){align-self:flex-end;border-bottom-right-radius:6px}
+.msg.t-jaune{--t:#FFD23F}.msg.t-rose{--t:#F2509B}.msg.t-turquoise{--t:#34BEDE}.msg.t-orange{--t:#FF9234}.msg.t-lilas{--t:#B880F0}
+.msg.vu{opacity:1;transform:none}
+.msg-tape{display:inline-flex;gap:5px;align-items:center;padding:14px 18px;background:var(--papier);width:auto}
+.msg-tape span{width:7px;height:7px;border-radius:50%;background:var(--gris);opacity:.5;animation:tape 1.2s infinite}
+.msg-tape span:nth-child(2){animation-delay:.2s}.msg-tape span:nth-child(3){animation-delay:.4s}
+@keyframes tape{0%,60%,100%{transform:none;opacity:.35}30%{transform:translateY(-4px);opacity:.9}}
+.bio2-plus{display:none}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .msg{color:var(--encre);background:color-mix(in srgb,var(--t) 22%,var(--papier))}}
+@media (prefers-reduced-motion:reduce){.msg{opacity:1;transform:none;transition:none}.msg-tape span{animation:none}}
+@media (max-width:820px){
+  .bio2-inner{grid-template-columns:minmax(0,1fr);gap:24px}
+  .bio2-intro{position:static}
+  .bio2-chapo{margin-bottom:0}
+  .bio2-fin,.bio2-sig{display:none}
+  .bio2-fil{justify-self:stretch;max-width:none}
+  .msg{max-width:88%;font-size:.9rem;padding:11px 15px}
+  .bio2-fil.replie .msg:nth-of-type(n+4){display:none}
+  .bio2-plus{display:block;align-self:center;margin-top:6px;background:none;border:1px solid var(--encre);color:var(--encre);font:400 .66rem/1 var(--sans);letter-spacing:.22em;text-transform:uppercase;padding:13px 20px;cursor:pointer}
+  .bio2-fil:not(.replie) .bio2-plus{display:none}
+  .bio2-fil:not(.replie)::after{content:"Bref, j’aime la vie en couleur.";font-family:"Parisienne","Cormorant Garamond",cursive;font-size:2rem;text-align:center;margin-top:14px}
+}
+
+/* Bio v2 : fond = papier du site (grain visible), titre calligraphié soigné */
+.bio2{background:transparent}
+.bio2-fin{font-family:"Great Vibes","Parisienne",cursive;font-weight:400;font-size:clamp(2.3rem,3.6vw,3rem);line-height:1.05;color:var(--ciel);margin:6px 0 4px;letter-spacing:.005em;position:relative;display:inline-block;padding-bottom:10px}
+.bio2-fin::after{content:"";position:absolute;left:-4%;right:-6%;bottom:-2px;height:16px;background:url("img/vif-trait-orange.webp") center/100% 100% no-repeat;opacity:.55;mix-blend-mode:multiply;z-index:-1}
+.bio2-sig{display:block;margin-top:14px}
+@media (max-width:820px){.bio2-fil:not(.replie)::after{font-family:"Great Vibes","Parisienne",cursive;color:var(--ciel);font-size:2.3rem}}
+
+/* Fond crème uniforme sur tout le site */
+.collections,.bio2,.contact,.lettre,.page,.lieux,.lieu{background:transparent!important}
+
+/* Marges réduites entre blocs + taches entières (non rognées) */
+.collections{padding-bottom:clamp(28px,4vw,48px)!important}
+.bio2{padding-block:clamp(32px,5vw,64px)!important;overflow:visible!important;overflow-x:clip!important}
+.contact{padding-top:clamp(28px,4vw,52px)!important}
+.bio2::before{left:clamp(-40px,-2vw,-10px);top:clamp(-10px,1vw,20px);width:clamp(180px,22vw,320px);opacity:.7}
+.bio2::after{right:clamp(-30px,-1vw,0px);bottom:clamp(0px,2vw,30px);width:clamp(160px,18vw,280px)}
+@media (max-width:820px){.bio2::before{width:150px;left:-40px;top:0}.bio2::after{width:140px;right:-30px;bottom:10px}}
+
+/* Bio : accents en rose fuchsia (palette aquarelle) au lieu du bleu */
+.bio2 h2 em,.bio2-fin{color:#D63F86}
+.bio2-fin::after{background-image:url("img/vif-trait-ocre.webp");opacity:.6}
+@media (max-width:820px){.bio2-fil:not(.replie)::after{color:#D63F86}}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .bio2 h2 em,:root:not([data-theme="light"]) .bio2-fin{color:#F58BBE}}
+.bio2 .eyebrow{color:#D63F86}.bio2-sig{color:#D63F86}
+.note a{color:inherit;text-decoration:underline;text-underline-offset:3px}
 </style>
 
 <header>
@@ -589,13 +705,14 @@ footer{background:#2B2029}
         <div class="menu" id="menu-collections">
           <a href="#sainte-victoire">Sainte-Victoire</a>
           <a href="#little-sainte-victoire">Little Sainte-Victoire</a>
-          <a href="#galerie-de-portraits">Galerie de portraits</a>
+          <a href="#galerie-de-portraits">Portrait</a>
           <a href="#scenes-de-vie">Scènes de vie</a>
-          <a href="#nos-amis-les-betes">Nos amis les bêtes</a>
           <a href="#de-la-tete-aux-pieds">De la tête aux pieds</a>
+          <a href="#nos-amis-les-betes">Nos amis les bêtes</a>
           <a href="#aromes-et-saveurs">Arômes et saveurs</a>
-          <a href="#la-mer">La mer</a>
-          <a href="#abstrait">Abstrait</a>
+          <a href="#la-mer">Maritime</a>
+          <a href="#des-arbres">Des arbres</a>
+          <a href="#ville-et-campagne">De la ville à la campagne</a>
           <a class="tout" href="#collections">Toutes les collections</a>
         </div>
       </li>
@@ -632,7 +749,7 @@ footer{background:#2B2029}
         <figure class="work"><img src="img/butterfly.jpg" alt="Butterfly, portrait d’une jeune femme rousse, un papillon sur l’épaule" style="object-position:50% 40%"></figure>
         <div class="hero-text">
           <p class="kicker">Collection</p>
-          <p class="title">Galerie de portraits</p>
+          <p class="title">Portrait</p>
           <p>Butterfly · Huile sur toile</p>
           <a class="btn" href="#galerie-de-portraits">Voir la collection</a>
         </div>
@@ -643,7 +760,7 @@ footer{background:#2B2029}
       <div class="dots">
         <button type="button" class="dot on" aria-label="Sainte-Victoire" aria-current="true"></button>
         <button type="button" class="dot" aria-label="Little Sainte-Victoire"></button>
-        <button type="button" class="dot" aria-label="Galerie de portraits"></button>
+        <button type="button" class="dot" aria-label="Portrait"></button>
       </div>
       <button class="arrow" type="button" data-dir="1" aria-label="Collection suivante">&#8250;</button>
     </div>
@@ -657,62 +774,68 @@ footer{background:#2B2029}
       </div>
       <div class="cards">
         <a class="card" href="#sainte-victoire">
-          <figure class="work"><img src="img/enivrante.jpg" alt="" style="object-position:55% 50%" loading="lazy"></figure>
-          <span class="label"><span>Huile coulée</span><strong>Sainte-Victoire</strong><em>15 œuvres</em></span>
+          <figure class="work"><img src="img/dansante.jpg" alt="" style="object-position:50% 40%" loading="lazy"></figure>
+          <span class="label"><span>Zéro pinceau</span><strong>Sainte-Victoire</strong><em>13 œuvres</em></span>
         </a>
         <a class="card" href="#little-sainte-victoire">
           <figure class="work"><img src="img/soleil-levant.jpg" alt="" style="object-position:50% 80%" loading="lazy"></figure>
-          <span class="label"><span>Petits formats</span><strong>Little Sainte-Victoire</strong><em>4 œuvres</em></span>
+          <span class="label"><span>Zéro pinceau</span><strong>Little Sainte-Victoire</strong><em>5 œuvres</em></span>
         </a>
         <a class="card" href="#galerie-de-portraits">
           <figure class="work"><img src="img/butterfly.jpg" alt="" style="object-position:50% 35%" loading="lazy"></figure>
-          <span class="label"><span>Huile au pinceau</span><strong>Galerie de portraits</strong><em>13 œuvres</em></span>
+          <span class="label"><span>Huile au pinceau</span><strong>Portrait</strong><em>10 œuvres</em></span>
         </a>
         <a class="card" href="#scenes-de-vie">
           <figure class="work"><img src="img/scenes-avion.jpg" alt="" style="object-position:50% 38%" loading="lazy"></figure>
-          <span class="label"><span>Huile au pinceau</span><strong>Scènes de vie</strong><em>4 œuvres</em></span>
-        </a>
-        <a class="card" href="#nos-amis-les-betes">
-          <figure class="work"><img src="img/ig-12.jpg" alt="" loading="lazy"></figure>
-          <span class="label"><span>Huile au pinceau</span><strong>Nos amis les bêtes</strong><em>7 œuvres</em></span>
+          <span class="label"><span>Huile au pinceau</span><strong>Scènes de vie</strong><em>8 œuvres</em></span>
         </a>
         <a class="card" href="#de-la-tete-aux-pieds">
           <figure class="work"><img src="img/ig-25.jpg" alt="" loading="lazy"></figure>
-          <span class="label"><span>Huile au pinceau</span><strong>De la tête aux pieds</strong><em>7 œuvres</em></span>
+          <span class="label"><span>Huile au pinceau</span><strong>De la tête aux pieds</strong><em>8 œuvres</em></span>
+        </a>
+        <a class="card" href="#nos-amis-les-betes">
+          <figure class="work"><img src="img/ig-12.jpg" alt="" loading="lazy"></figure>
+          <span class="label"><span>Huile au pinceau</span><strong>Nos amis les bêtes</strong><em>11 œuvres</em></span>
         </a>
         <a class="card" href="#aromes-et-saveurs">
           <figure class="work"><img src="img/ig-17.jpg" alt="" loading="lazy"></figure>
-          <span class="label"><span>Huile au pinceau</span><strong>Arômes et saveurs</strong><em>4 œuvres</em></span>
+          <span class="label"><span>Huile au pinceau</span><strong>Arômes et saveurs</strong><em>9 œuvres</em></span>
         </a>
         <a class="card" href="#la-mer">
           <figure class="work"><img src="img/ig-48.jpg" alt="" loading="lazy"></figure>
-          <span class="label"><span>Huile sur toile</span><strong>La mer</strong><em>1 œuvre</em></span>
+          <span class="label"><span>Huile sur toile</span><strong>Maritime</strong><em>5 œuvres</em></span>
         </a>
-        <a class="card" href="#abstrait">
-          <figure class="work"><img src="img/ig-37.jpg" alt="" loading="lazy"></figure>
-          <span class="label"><span>Huile sur toile</span><strong>Abstrait</strong><em>6 œuvres</em></span>
+        <a class="card" href="#des-arbres">
+          <figure class="work"><img src="img/arb-branches-neige.jpg" alt="" style="object-position:50% 50%" loading="lazy"></figure>
+          <span class="label"><span>Huile sur toile</span><strong>Des arbres</strong><em>3 œuvres</em></span>
+        </a>
+        <a class="card" href="#ville-et-campagne">
+          <figure class="work"><img src="img/vc-lisboa.jpg" alt="" style="object-position:50% 50%" loading="lazy"></figure>
+          <span class="label"><span>Huile sur toile</span><strong>De la ville à la campagne</strong><em>6 œuvres</em></span>
         </a>
       </div>
     </div>
   </section>
 
-  <section class="bio" id="bio" aria-label="Une bio très perso">
-    <div class="wrap bio-inner">
-      <figure class="portrait"><img src="img/accueil.jpg" alt="Bénédicte souriante, présentant deux de ses toiles" loading="lazy"></figure>
-      <div>
+  <section class="bio2" id="bio" aria-label="Une bio très perso">
+    <div class="wrap bio2-inner">
+      <div class="bio2-intro">
         <p class="eyebrow">L'artiste</p>
-        <h2 style="margin-top:8px"><span class="touche t-lav">Une bio</span> très perso&nbsp;?</h2>
-        <div class="poeme">
-          <p>Je m'appelle Bénédicte Teyssandier-Grézard.</p>
-          <p>J'aime les brioches, les crêpes, les beignets,<br>surtout ma famille et mes amis aussi&nbsp;!</p>
-          <p>J'aime courir, pédaler, barboter l'hiver ou l'été,<br>respirer et rire souvent.</p>
-          <p>J'aime papoter, discuter, débattre,<br>j'aime la bienveillance aussi&nbsp;!</p>
-          <p>J'aime les soirées d'été, les levers de soleil,<br>les cigales et mes abeilles,<br>l'odeur des pins et des feuillus aussi.<br>Une idée simple du bonheur.</p>
-          <p>J'aime la curiosité, les différences,<br>le plaisir d'apprendre et de transmettre aussi&nbsp;!</p>
-          <p>J'aime le verre à moitié plein,<br>l'altruisme et le partage,<br>mais une douzaine de daifuku surtout&nbsp;!</p>
-          <p>J'aime la rigueur, l'excès,<br>la glace citron meringuée,<br>chanter, danser, peindre<br>et les mochis aussi&nbsp;!</p>
-          <p><em>Bref, j'aime la vie en couleurs.<br>Vous l'avez compris&nbsp;!</em></p>
-        </div>
+        <h2>Une bio<br><em>très perso&nbsp;?</em></h2>
+        <p class="bio2-chapo">Je m’appelle Bénédicte Teyssandier-Grézard. Le plus simple, c’est encore de vous dire ce que j’aime.</p>
+        <p class="bio2-fin">Bref, j’aime la vie en couleur.</p>
+        <span class="sig bio2-sig" role="img" aria-label="Signature de Bénédicte"></span>
+      </div>
+      <div class="bio2-fil" id="bio-fil">
+        <p class="msg t-jaune">J’aime les brioches, les crêpes, les beignets, surtout ma famille et mes amis aussi&nbsp;!</p>
+        <p class="msg t-rose">J’aime courir, pédaler, barboter l’hiver ou l’été, respirer et rire souvent.</p>
+        <p class="msg t-turquoise">J’aime papoter, discuter, débattre, j’aime la bienveillance aussi&nbsp;!</p>
+        <p class="msg t-orange">J’aime les soirées d’été, les levers de soleil, les cigales et mes abeilles, l’odeur des pins et des feuillus aussi. Une idée simple du bonheur.</p>
+        <p class="msg t-lilas">J’aime la curiosité, les différences, le plaisir d’apprendre et de transmettre aussi&nbsp;!</p>
+        <p class="msg t-jaune">J’aime le verre à moitié plein, l’altruisme et le partage, mais une douzaine de daifuku surtout&nbsp;!</p>
+        <p class="msg t-rose">J’aime la rigueur, l’excès, la glace citron meringuée, chanter, danser, peindre et les mochis aussi&nbsp;!</p>
+        <p class="msg msg-tape" aria-label="Bref…"><span></span><span></span><span></span></p>
+        <button class="bio2-plus" type="button" aria-expanded="false" aria-controls="bio-fil">Lire toute la conversation</button>
       </div>
     </div>
   </section>
@@ -755,50 +878,44 @@ footer{background:#2B2029}
   <div class="wrap page">
     <a class="retour" href="#collections">&#8592; Toutes les collections</a>
     <div class="mur" id="toiles-sainte-victoire">
-      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:88.1%;aspect-ratio:506/676"><img src="img/ig-00.jpg" alt="Magnétique-Sainte-Victoire, ciel strié de rouge au-dessus de la montagne" loading="lazy"></figure></div>
-        <div class="cartel"><h3>Magnétique</h3><span class="prix dem">Prix sur demande</span><small>100 × 80 cm</small><small class="tech-o">Huile coulée, zéro pinceau</small></div></article>
-      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:84.4%;aspect-ratio:505/676"><img src="img/ig-01.jpg" alt="Curiosité matinale-Sainte-Victoire, la montagne blanche au-dessus de champs jaunes" loading="lazy"></figure></div>
+      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:87.9%;aspect-ratio:640/444"><img src="img/sv-curiosite.jpg" alt="Curiosité matinale-Sainte-Victoire, la montagne blanche au-dessus de champs jaunes" loading="lazy"></figure></div>
         <div class="cartel"><h3>Curiosité matinale</h3><span class="prix dem">Prix sur demande</span><small>65 × 92 cm</small><small class="tech-o">Huile coulée, zéro pinceau</small></div></article>
-      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:88.1%;aspect-ratio:506/676"><img src="img/ig-08.jpg" alt="Panoramique-Sainte-Victoire, la montagne en panorama" loading="lazy"></figure></div>
+      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:100.0%;aspect-ratio:640/314"><img src="img/sv-panoramique.jpg" alt="Panoramique-Sainte-Victoire, la montagne en panorama" loading="lazy"></figure></div>
         <div class="cartel"><h3>Panoramique</h3><span class="prix">900 €</span><small>50 × 100 cm · avec cadre</small><small class="tech-o">Huile coulée, zéro pinceau</small></div></article>
-      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:79.8%;aspect-ratio:506/676"><img src="img/ig-07.jpg" alt="Ascension-Sainte-Victoire, roche grise et blanche" loading="lazy"></figure></div>
+      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:60.7%;aspect-ratio:482/640"><img src="img/sv-ascension.jpg" alt="Ascension-Sainte-Victoire, roche grise et blanche" loading="lazy"></figure></div>
         <div class="cartel"><h3>Ascension</h3><span class="prix dem">Prix sur demande</span><small>82 × 60 cm</small><small class="tech-o">Huile coulée et pinceau</small></div></article>
-      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:78.3%;aspect-ratio:1006/1378"><img src="img/dansante.jpg" alt="Dansante-Sainte-Victoire, une allée de pins menant à la montagne" loading="lazy"></figure></div>
+      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:59.3%;aspect-ratio:1006/1378"><img src="img/dansante.jpg" alt="Dansante-Sainte-Victoire, une allée de pins menant à la montagne" loading="lazy"></figure></div>
         <div class="cartel"><h3>Dansante</h3><span class="prix dem">Prix sur demande</span><small>82 × 54 cm</small><small class="tech-o">Huile coulée sur toile</small></div></article>
-      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:80.2%;aspect-ratio:1123/1378"><img src="img/flottante.jpg" alt="Flottante-Sainte-Victoire, la montagne grise et sa croix au-dessus de la brume" loading="lazy"></figure></div>
+      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:60.8%;aspect-ratio:1123/1378"><img src="img/flottante.jpg" alt="Flottante-Sainte-Victoire, la montagne grise et sa croix au-dessus de la brume" loading="lazy"></figure></div>
         <div class="cartel"><h3>Flottante</h3><span class="prix dem">Prix sur demande</span><small>73 × 60 cm</small><small class="tech-o">Huile coulée</small></div></article>
-      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:74.8%;aspect-ratio:506/676"><img src="img/ig-28.jpg" alt="Conciliabule-Sainte-Victoire, un groupe de randonneurs au pied de la montagne" loading="lazy"></figure></div>
-        <div class="cartel"><h3>Conciliabule</h3><span class="prix dem">Prix sur demande</span><small>60 × 72 cm</small><small class="tech-o">Huile coulée, pinceau</small></div></article>
-      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:92.2%;aspect-ratio:1358/1132"><img src="img/accueillante.jpg" alt="Accueillante-Sainte-Victoire, la montagne derrière un pin" loading="lazy"></figure></div>
+      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:69.8%;aspect-ratio:1358/1132"><img src="img/accueillante.jpg" alt="Accueillante-Sainte-Victoire, la montagne derrière un pin" loading="lazy"></figure></div>
         <div class="cartel"><h3>Accueillante</h3><span class="prix">800 €</span><small>54 × 72 cm · avec cadre</small><small class="tech-o">Huile coulée</small></div></article>
-      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:100.0%;aspect-ratio:1378/1031"><img src="img/sevillante.jpg" alt="Sévillante-Sainte-Victoire, la montagne blanche au-dessus de champs rouges" loading="lazy"></figure></div>
-        <div class="cartel"><h3>Sévillante</h3><span class="prix">800 €</span><small>54 × 72 cm · avec cadre</small><small class="tech-o">Huile coulée</small></div></article>
-      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:94.0%;aspect-ratio:1378/1120"><img src="img/vibrante.jpg" alt="Vibrante-Sainte-Victoire, la montagne orangée sous un ciel d’orage" loading="lazy"></figure></div>
-        <div class="cartel"><h3>Vibrante</h3><span class="prix dem">Prix sur demande</span><small>54 × 72 cm</small><small class="tech-o">Huile coulée</small></div></article>
-      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:74.6%;aspect-ratio:505/676"><img src="img/ig-09.jpg" alt="Ocre-Bleue-Sainte-Victoire, les flancs ocre de la montagne" loading="lazy"></figure></div>
+      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:77.3%;aspect-ratio:640/466"><img src="img/sv-ocre-bleue.jpg" alt="Ocre-Bleue-Sainte-Victoire, les flancs ocre de la montagne" loading="lazy"></figure></div>
         <div class="cartel"><h3>Ocre-Bleue</h3><span class="prix dem">Prix sur demande</span><small>54 × 72 cm</small><small class="tech-o">Huile coulée, zéro pinceau</small></div></article>
-      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:89.6%;aspect-ratio:1427/1175"><img src="img/enivrante.jpg" alt="Enivrante-Sainte-Victoire, la montagne au-dessus d’un champ de lavande" loading="lazy"></figure></div>
-        <div class="cartel"><h3>Enivrante</h3><span class="prix dem">Prix sur demande</span><small>70 × 50 cm · encadré</small><small class="tech-o">Huile coulée sur toile</small></div></article>
-      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:94.4%;aspect-ratio:382/293"><img src="img/verdoyante.jpg" alt="Verdoyante-Sainte-Victoire, la montagne entre deux collines vertes" loading="lazy"></figure></div>
-        <div class="cartel"><h3>Verdoyante</h3><span class="prix dem">Prix sur demande</span><small>70 × 50 cm · encadré</small><small class="tech-o">Huile coulée sur toile</small></div></article>
-      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:79.7%;aspect-ratio:1116/1343"><img src="img/sv-coucher.jpg" alt="Flamboyante-Sainte-Victoire, silhouette sombre sous un ciel de feu" loading="lazy"></figure></div>
+      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:75.7%;aspect-ratio:1378/1031"><img src="img/sevillante.jpg" alt="Sévillante-Sainte-Victoire, la montagne blanche au-dessus de champs rouges" loading="lazy"></figure></div>
+        <div class="cartel"><h3>Sévillante</h3><span class="prix">800 €</span><small>54 × 72 cm · avec cadre</small><small class="tech-o">Huile coulée</small></div></article>
+      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:76.6%;aspect-ratio:640/472"><img src="img/sv-sans-titre.jpg" alt="Somnolente-Sainte-Victoire, rouge-orangée sous un ciel gris et nuageux" loading="lazy"></figure></div>
+        <div class="cartel"><h3>Somnolente</h3><span class="prix dem">Prix sur demande</span><small>54 × 72 cm</small><small class="tech-o">Huile coulée</small></div></article>
+      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:70.2%;aspect-ratio:640/530"><img src="img/sv-verdoyante.jpg" alt="Verdoyante-Sainte-Victoire, la montagne entre deux collines vertes" loading="lazy"></figure></div>
+        <div class="cartel"><h3>Verdoyante</h3><span class="prix">800 €</span><small>54 × 72 cm · avec cadre</small><small class="tech-o">Huile coulée sur toile</small></div></article>
+      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:60.4%;aspect-ratio:1116/1343"><img src="img/sv-coucher.jpg" alt="Flamboyante-Sainte-Victoire, silhouette sombre sous un ciel de feu" loading="lazy"></figure></div>
         <div class="cartel"><h3>Flamboyante</h3><span class="prix dem">Prix sur demande</span><small>70 × 50 cm</small><small class="tech-o">Huile coulée sur toile</small></div></article>
-      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:72.5%;aspect-ratio:1101/1372"><img src="img/ensorcelante.jpg" alt="Ensorcelante-Sainte-Victoire, la montagne bleutée sous la pleine lune" loading="lazy"></figure></div>
+      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:67.5%;aspect-ratio:1600/1327"><img src="img/sv-enivrante.jpg" alt="Enivrante-Sainte-Victoire, la montagne au-dessus d’un champ de lavande" loading="lazy"></figure></div>
+        <div class="cartel"><h3>Enivrante</h3><span class="prix dem">Prix sur demande</span><small>70 × 50 cm · encadré</small><small class="tech-o">Huile coulée sur toile</small></div></article>
+      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:54.9%;aspect-ratio:1101/1372"><img src="img/ensorcelante.jpg" alt="Ensorcelante-Sainte-Victoire, la montagne bleutée sous la pleine lune" loading="lazy"></figure></div>
         <div class="cartel"><h3>Ensorcelante</h3><span class="prix dem">Prix sur demande</span><small>50 × 61 cm</small><small class="tech-o">Huile coulée</small></div></article>
     </div>
-    <p class="note">Dimensions en centimètres. Prix indicatifs.</p>
+    <p class="note">Dimensions en centimètres. Prix indicatifs. Les toiles « prix sur demande » sont estimées selon leur format, leur thème et leur technique : <a href="#contact">demandez-moi le prix</a>, je vous réponds avec plaisir.</p>
     <div class="cta-contact"><p>Un coup de cœur pour une Sainte-Victoire ?</p><a class="btn" href="#contact">Contactez-moi</a></div>
   </div>
 </div>
 
 <div id="little-sainte-victoire" class="view" hidden>
-  <section class="hero-texte" aria-label="Little Sainte-Victoire">
+  <section class="hero-texte hero-court" aria-label="Little Sainte-Victoire">
     <figure class="hero-fond"><img src="img/soleil-levant.jpg" alt="" style="object-position:50% 90%"></figure>
     <div class="wrap hero-inner">
       <div class="hero-panneau">
         <div class="hero-titre"><p class="hero-kicker">Collection</p><h1>Little Sainte-Victoire</h1><p class="hero-tech">Huile coulée sur toile · Zéro pinceau · Petits formats</p></div>
-        <p class="hero-dialogue">La Sainte-Victoire en petits formats, vendus sans cadre. Idéal pour un premier coup de cœur.</p>
-        <p>Texte de présentation à venir.</p>
         <div class="hero-pied"><span class="hero-sign">Bénédicte T-G</span><a class="btn" href="#toiles-little-sainte-victoire">Voir les toiles</a></div>
       </div>
       <p class="hero-legende">Soleil levant · Huile coulée sur toile</p>
@@ -807,28 +924,28 @@ footer{background:#2B2029}
   <div class="wrap page">
     <a class="retour" href="#collections">&#8592; Toutes les collections</a>
         <div class="mur" id="toiles-little-sainte-victoire">
-      <article class="oeuvre"><div class="zone"><figure class="work toile vide-toile" style="width:85.5%;aspect-ratio:24/30;--g:radial-gradient(90% 80% at 30% 20%,#ffb04a,transparent 60%),radial-gradient(80% 80% at 80% 50%,#d8302e,transparent 60%),#3a1424"><span class="ph">Photo à venir</span></figure></div>
+      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:100.0%;aspect-ratio:640/384"><img src="img/lsv-sans-titre.jpg" alt="Vaporeuse, la Sainte-Victoire claire au-dessus de la brume et de champs dorés" loading="lazy"></figure></div>
+        <div class="cartel"><h3>Vaporeuse</h3><span class="prix dem">Prix sur demande</span><small>33 × 55 cm</small><small class="tech-o">Huile coulée sur toile</small></div></article>
+      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:56.1%;aspect-ratio:526/640"><img src="img/lsv-ciel-de-feu.jpg" alt="Ciel de feu, silhouette de la Sainte-Victoire sous un ciel rose et orangé" loading="lazy"></figure></div>
         <div class="cartel"><h3>Ciel de feu</h3><span class="prix">100 €</span><small>30 × 24 cm · sans cadre</small><small class="tech-o">Huile coulée sur toile</small></div></article>
-      <article class="oeuvre"><div class="zone"><figure class="work toile vide-toile" style="width:72.8%;aspect-ratio:18/24;--g:radial-gradient(90% 80% at 30% 20%,#d8e6f0,transparent 60%),radial-gradient(80% 80% at 80% 50%,#8aa0c8,transparent 60%),#3a4060"><span class="ph">Photo à venir</span></figure></div>
-        <div class="cartel"><h3>Impression</h3><span class="prix">90 €</span><small>24 × 18 cm · sans cadre</small><small class="tech-o">Huile coulée sur toile</small></div></article>
-      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:74.6%;aspect-ratio:1084/1400"><img src="img/soleil-levant.jpg" alt="Soleil levant, silhouette sombre de la Sainte-Victoire sous un ciel orange et rouge" loading="lazy"></figure></div>
+      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:48.0%;aspect-ratio:1066/1378"><img src="img/soleil-levant.jpg" alt="Soleil levant, silhouette sombre de la Sainte-Victoire sous un ciel orange et rouge" loading="lazy"></figure></div>
         <div class="cartel"><h3>Soleil levant</h3><span class="prix">90 €</span><small>24 × 19 cm · sans cadre</small><small class="tech-o">Huile coulée sur toile</small></div></article>
-      <article class="oeuvre"><div class="zone"><figure class="work toile vide-toile" style="width:100.0%;aspect-ratio:24/16;--g:radial-gradient(90% 80% at 30% 20%,#f7b0c0,transparent 60%),radial-gradient(80% 80% at 80% 50%,#a04a8a,transparent 60%),#3b2448"><span class="ph">Photo à venir</span></figure></div>
-        <div class="cartel"><h3>Enivrante 2</h3><span class="prix">80 €</span><small>16 × 24 cm · sans cadre</small><small class="tech-o">Huile coulée sur toile</small></div></article>
+      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:46.3%;aspect-ratio:472/640"><img src="img/lsv-impression.jpg" alt="Impression, la Sainte-Victoire bleue sous un ciel jaune" loading="lazy"></figure></div>
+        <div class="cartel"><h3>Impression</h3><span class="prix">90 €</span><small>24 × 18 cm · sans cadre</small><small class="tech-o">Huile coulée sur toile</small></div></article>
+      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:64.3%;aspect-ratio:900/600"><img src="img/lsv-enivrante-2.jpg" alt="Little Enivrante, la Sainte-Victoire au-dessus d’un champ de lavande" loading="lazy"></figure></div>
+        <div class="cartel"><h3>Little Enivrante</h3><span class="prix">80 €</span><small>16 × 24 cm · sans cadre</small><small class="tech-o">Huile coulée sur toile</small></div></article>
     </div>
-    <p class="note">Dimensions en centimètres. Prix indicatifs.</p>
+    <p class="note">Dimensions en centimètres. Prix indicatifs. Les toiles « prix sur demande » sont estimées selon leur format, leur thème et leur technique : <a href="#contact">demandez-moi le prix</a>, je vous réponds avec plaisir.</p>
     <div class="cta-contact"><p>Un coup de cœur pour une Little Sainte-Victoire ?</p><a class="btn" href="#contact">Contactez-moi</a></div>
   </div>
 </div>
 
 <div id="galerie-de-portraits" class="view" hidden>
-  <section class="hero-texte" aria-label="Galerie de portraits">
+  <section class="hero-texte hero-court" aria-label="Portrait">
     <figure class="hero-fond"><img src="img/butterfly.jpg" alt="Butterfly, portrait d’une jeune femme rousse" style="object-position:60% 34%"></figure>
     <div class="wrap hero-inner">
       <div class="hero-panneau">
-        <div class="hero-titre"><p class="hero-kicker">Collection</p><h1>Galerie de portraits</h1><p class="hero-tech">Huile sur toile · Pinceau</p></div>
-        <p class="hero-dialogue">Texte de présentation à venir.</p>
-        <p>Bénédicte rédige le texte qui présentera cette collection : ses modèles, ses regards, sa manière de travailler le portrait au pinceau.</p>
+        <div class="hero-titre"><p class="hero-kicker">Collection</p><h1>Portrait</h1><p class="hero-tech">Huile sur toile · Pinceau</p></div>
         <div class="hero-pied"><span class="hero-sign">Bénédicte T-G</span><a class="btn" href="#toiles-portraits">Voir les toiles</a></div>
       </div>
       <p class="hero-legende">Butterfly · Huile sur toile</p>
@@ -837,46 +954,38 @@ footer{background:#2B2029}
   <div class="wrap page">
     <a class="retour" href="#collections">&#8592; Toutes les collections</a>
     <div class="mur" id="toiles-portraits">
-      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:100.0%;aspect-ratio:1280/1060"><img src="img/venise.jpg" alt="Venise, une femme coiffée d’une grande parure bleue" loading="lazy"></figure></div>
+      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:82.7%;aspect-ratio:480/640"><img src="img/po-mucha.jpg" alt="Médée, portrait d’inspiration Art nouveau" loading="lazy"></figure></div>
+        <div class="cartel"><h3>Médée</h3><span class="prix dem">Prix sur demande</span><small>42 × 68 cm</small><small class="tech-o">Huile</small></div></article>
+      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:100.0%;aspect-ratio:640/540"><img src="img/po-venise.jpg" alt="Venise, une femme coiffée d’une grande parure bleue" loading="lazy"></figure></div>
         <div class="cartel"><h3>Venise</h3><span class="prix dem">Prix sur demande</span><small>50 × 50 cm</small><small class="tech-o">Huile sur toile</small></div></article>
-      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:64.3%;aspect-ratio:764/1199"><img src="img/pre-miss.jpg" alt="Pré-Miss, une jeune fille vue de dos, longue tresse et colibri" loading="lazy"></figure></div>
-        <div class="cartel"><h3>Pré-Miss</h3><span class="prix">400 €</span><small>54 × 38 cm · avec cadre</small><small class="tech-o">Huile</small></div></article>
-      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:71.8%;aspect-ratio:1293/1574"><img src="img/butterfly.jpg" alt="Butterfly, une jeune femme rousse, un papillon sur l’épaule" loading="lazy"></figure></div>
+      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:72.9%;aspect-ratio:1293/1574"><img src="img/butterfly.jpg" alt="Butterfly, une jeune femme rousse, un papillon sur l’épaule" loading="lazy"></figure></div>
         <div class="cartel"><h3>Butterfly</h3><span class="prix">350 €</span><small>46 × 38 cm · sans cadre</small><small class="tech-o">Huile</small></div></article>
-      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:70.7%;aspect-ratio:1025/1274"><img src="img/frondeuse.jpg" alt="Frondeuse, gros plan d’une jeune femme rousse" loading="lazy"></figure></div>
+      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:72.7%;aspect-ratio:524/640"><img src="img/po-frondeuse.jpg" alt="Frondeuse, gros plan d’une jeune femme rousse" loading="lazy"></figure></div>
         <div class="cartel"><h3>Frondeuse</h3><span class="prix dem">Prix sur demande</span><small>46 × 38 cm</small><small class="tech-o">Huile</small></div></article>
-      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:62.8%;aspect-ratio:867/1244"><img src="img/songeuse.jpg" alt="Songeuse, une jeune femme aux cheveux courts" loading="lazy"></figure></div>
-        <div class="cartel"><h3>Songeuse</h3><span class="prix">400 €</span><small>45 × 38 cm · avec cadre</small><small class="tech-o">Huile</small></div></article>
-      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:66.2%;aspect-ratio:505/676"><img src="img/ig-10.jpg" alt="Rasta, un homme souriant coiffé d’une casquette rouge" loading="lazy"></figure></div>
-        <div class="cartel"><h3>Rasta</h3><span class="prix">350 €</span><small>45 × 38 cm · sans cadre</small><small class="tech-o">Huile sur toile</small></div></article>
-      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:71.3%;aspect-ratio:1056/1280"><img src="img/ethiope.jpg" alt="Éthiope, une jeune femme au foulard rose sur fond vert" loading="lazy"></figure></div>
+      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:72.0%;aspect-ratio:809/1000"><img src="img/po-rasta.jpg" alt="Rasta, un homme souriant coiffé d’une casquette rouge" loading="lazy"></figure></div>
+        <div class="cartel"><h3>Rasta</h3><span class="prix">350 €</span><small>46 × 38 cm · sans cadre</small><small class="tech-o">Huile sur toile</small></div></article>
+      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:62.1%;aspect-ratio:664/1000"><img src="img/po-songeuse.jpg" alt="Songeuse, une jeune femme aux cheveux courts" loading="lazy"></figure></div>
+        <div class="cartel"><h3>Songeuse</h3><span class="prix">400 €</span><small>46 × 38 cm · avec cadre</small><small class="tech-o">Huile</small></div></article>
+      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:72.3%;aspect-ratio:1056/1280"><img src="img/ethiope.jpg" alt="Éthiope, une jeune femme au foulard rose sur fond vert" loading="lazy"></figure></div>
         <div class="cartel"><h3>Éthiope</h3><span class="prix dem">Prix sur demande</span><small>45 × 38 cm</small><small class="tech-o">Huile</small></div></article>
-      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:62.6%;aspect-ratio:854/1232"><img src="img/menthe-a-l-eau.jpg" alt="Menthe à l’eau, une jeune femme sur fond turquoise" loading="lazy"></figure></div>
+      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:61.4%;aspect-ratio:664/1000"><img src="img/po-menthe.jpg" alt="Menthe à l’eau, une jeune femme sur fond turquoise" loading="lazy"></figure></div>
         <div class="cartel"><h3>Menthe à l’eau</h3><span class="prix dem">Prix sur demande</span><small>45 × 38 cm</small><small class="tech-o">Huile</small></div></article>
-      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:62.5%;aspect-ratio:506/676"><img src="img/ig-59.jpg" alt="Princesse, une petite fille couronnée de fleurs" loading="lazy"></figure></div>
-        <div class="cartel"><h3>Princesse</h3><span class="prix">400 €</span><small>40 × 40 cm · encadré</small><small class="tech-o">Huile sur toile</small></div></article>
-      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:66.3%;aspect-ratio:506/676"><img src="img/ig-56.jpg" alt="L’oiselière, une femme aux motifs colorés et un oiseau noir" loading="lazy"></figure></div>
+      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:69.5%;aspect-ratio:472/603"><img src="img/portrait-gris.jpg" alt="Seventies, une femme en camaïeu de gris, une fleur aux lèvres" loading="lazy"></figure></div>
+        <div class="cartel"><h3>Seventies</h3><span class="prix dem">Prix sur demande</span><small>45 × 38 cm</small><small class="tech-o">Huile sur toile</small></div></article>
+      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:67.2%;aspect-ratio:506/676"><img src="img/ig-56.jpg" alt="L’oiselière, une femme aux motifs colorés et un oiseau noir" loading="lazy"></figure></div>
         <div class="cartel"><h3>L’oiselière</h3><span class="prix dem">Prix sur demande</span><small>45 × 30 cm</small><small class="tech-o">Encre</small></div></article>
-      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:67.2%;aspect-ratio:1032/1252"><img src="img/portrait-chapeau.jpg" alt="Une jeune femme blonde au chapeau jaune" loading="lazy"></figure></div>
-        <div class="cartel"><h3>Titre à venir</h3><span class="prix dem">Prix sur demande</span><small>Dimensions à venir</small><small class="tech-o">Huile sur toile</small></div></article>
-      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:64.6%;aspect-ratio:472/603"><img src="img/portrait-gris.jpg" alt="Une femme en camaïeu de gris, une fleur aux lèvres" loading="lazy"></figure></div>
-        <div class="cartel"><h3>Titre à venir</h3><span class="prix dem">Prix sur demande</span><small>Dimensions à venir</small><small class="tech-o">Huile sur toile</small></div></article>
-      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:56.9%;aspect-ratio:757/1146"><img src="img/portrait-mucha.jpg" alt="Portrait d’inspiration Art nouveau" loading="lazy"></figure></div>
-        <div class="cartel"><h3>Titre à venir</h3><span class="prix dem">Prix sur demande</span><small>Dimensions à venir</small><small class="tech-o">Technique à préciser</small></div></article>
     </div>
-    <p class="note">Dimensions en centimètres. Prix indicatifs.</p>
+    <p class="note">Dimensions en centimètres. Prix indicatifs. Les toiles « prix sur demande » sont estimées selon leur format, leur thème et leur technique : <a href="#contact">demandez-moi le prix</a>, je vous réponds avec plaisir.</p>
     <div class="cta-contact"><p>Un coup de cœur pour un portrait ?</p><a class="btn" href="#contact">Contactez-moi</a></div>
   </div>
 </div>
 
 <div id="scenes-de-vie" class="view" hidden>
-  <section class="hero-texte" aria-label="Scènes de vie">
+  <section class="hero-texte hero-court" aria-label="Scènes de vie">
     <figure class="hero-fond"><img src="img/scenes-avion.jpg" alt="" style="object-position:50% 30%"></figure>
     <div class="wrap hero-inner">
       <div class="hero-panneau">
         <div class="hero-titre"><p class="hero-kicker">Collection</p><h1>Scènes de vie</h1><p class="hero-tech">Huile sur toile</p></div>
-        <p class="hero-dialogue">Des instants du quotidien saisis sur la toile.</p>
-        <p>Texte de présentation à venir.</p>
         <div class="hero-pied"><span class="hero-sign">Bénédicte T-G</span><a class="btn" href="#toiles-scenes-de-vie">Voir les toiles</a></div>
       </div>
       <p class="hero-legende">Willy Ronis · Huile sur toile</p>
@@ -885,28 +994,34 @@ footer{background:#2B2029}
   <div class="wrap page">
     <a class="retour" href="#collections">&#8592; Toutes les collections</a>
         <div class="mur">
-      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:96.2%;aspect-ratio:506/676"><img src="img/ig-19.jpg" alt="Ombre d’antan, un heurtoir de porte en fer" loading="lazy"></figure></div>
-        <div class="cartel"><h3>Ombre d’antan</h3><span class="prix dem">Prix sur demande</span><small>50 × 50 cm</small><small class="tech-o">Huile</small></div></article>
-      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:96.2%;aspect-ratio:506/676"><img src="img/ig-20.jpg" alt="Regard du passé, une porte bleue sur un mur décrépi" loading="lazy"></figure></div>
-        <div class="cartel"><h3>Regard du passé</h3><span class="prix dem">Prix sur demande</span><small>50 × 50 cm</small><small class="tech-o">Technique mixte, collage et huile</small></div></article>
-      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:100.0%;aspect-ratio:506/676"><img src="img/ig-23.jpg" alt="Lisboa, un tramway jaune dans une rue en pente" loading="lazy"></figure></div>
-        <div class="cartel"><h3>Lisboa</h3><span class="prix dem">Prix sur demande</span><small>54 × 38 cm</small><small class="tech-o">Huile</small></div></article>
-      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:72.4%;aspect-ratio:920/1574"><img src="img/scenes-avion.jpg" alt="Willy Ronis, un enfant lance un avion en papier, vu depuis une fenêtre" loading="lazy"></figure></div>
+      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:100.0%;aspect-ratio:1000/820"><img src="img/sc-conciliabule.jpg" alt="Conciliabule, un groupe de randonneurs au pied de la Sainte-Victoire" loading="lazy"></figure></div>
+        <div class="cartel"><h3>Conciliabule</h3><span class="prix dem">Prix sur demande</span><small>60 × 72 cm</small><small class="tech-o">Huile coulée, pinceau</small></div></article>
+      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:98.0%;aspect-ratio:640/539"><img src="img/sc-pouzet.jpg" alt="Le Pouzet, une carte illustrée avec la ferme, les animaux et les habitants" loading="lazy"></figure></div>
+        <div class="cartel"><h3>Le Pouzet</h3><span class="prix dem">Prix sur demande</span><small>60 × 72 cm</small><small class="tech-o">Technique mixte, collage</small></div></article>
+      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:72.8%;aspect-ratio:542/640"><img src="img/sc-nu-style.jpg" alt="Nu’Style, une femme nue assise sur une chaise" loading="lazy"></figure></div>
+        <div class="cartel"><h3>Nu’Style</h3><span class="prix dem">Prix sur demande</span><small>46 × 55 cm</small><small class="tech-o">Huile sur toile</small></div></article>
+      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:98.7%;aspect-ratio:640/394"><img src="img/sc-charrette.jpg" alt="Dakar, une femme en violet à côté d’une charrette de fruits" loading="lazy"></figure></div>
+        <div class="cartel"><h3>Dakar</h3><span class="prix dem">Prix sur demande</span><small>38 × 61 cm</small><small class="tech-o">Huile</small></div></article>
+      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:90.5%;aspect-ratio:640/442"><img src="img/sc-allegorie.jpg" alt="Allégorie, des jambes au bord de l’eau et un rouge-gorge" loading="lazy"></figure></div>
+        <div class="cartel"><h3>Allégorie</h3><span class="prix dem">Prix sur demande</span><small>38 × 54 cm</small><small class="tech-o">Huile</small></div></article>
+      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:60.8%;aspect-ratio:620/920"><img src="img/sc-pre-miss.jpg" alt="Pré-Miss, une jeune fille vue de dos, longue tresse et colibri" loading="lazy"></figure></div>
+        <div class="cartel"><h3>Pré-Miss</h3><span class="prix">400 €</span><small>54 × 38 cm · avec cadre</small><small class="tech-o">Huile</small></div></article>
+      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:47.6%;aspect-ratio:620/1060"><img src="img/sc-willy-ronis.jpg" alt="Willy Ronis, un enfant lance un avion en papier, vu depuis une fenêtre" loading="lazy"></figure></div>
         <div class="cartel"><h3>Willy Ronis</h3><span class="prix dem">Prix sur demande</span><small>41 × 25 cm</small><small class="tech-o">Huile sur toile</small></div></article>
+      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:85.2%;aspect-ratio:1000/775"><img src="img/sc-diptyque-afrique.jpg" alt="Cérémonie, diptyque encadré : un couple en tenues africaines et des djembés, tons rouges et ocre" loading="lazy"></figure></div>
+        <div class="cartel"><h3>Cérémonie</h3><span class="prix dem">Prix sur demande</span><small>Dimensions à venir · diptyque</small><small class="tech-o">Huile</small></div></article>
     </div>
-    <p class="note">Dimensions en centimètres. Prix indicatifs.</p>
+    <p class="note">Dimensions en centimètres. Prix indicatifs. Les toiles « prix sur demande » sont estimées selon leur format, leur thème et leur technique : <a href="#contact">demandez-moi le prix</a>, je vous réponds avec plaisir.</p>
     <div class="cta-contact"><p>Un coup de cœur pour une scène de vie ?</p><a class="btn" href="#contact">Contactez-moi</a></div>
   </div>
 </div>
 
 <div id="nos-amis-les-betes" class="view" hidden>
-  <section class="hero-texte" aria-label="Nos amis les bêtes">
+  <section class="hero-texte hero-court" aria-label="Nos amis les bêtes">
     <figure class="hero-fond"><img src="img/ig-02.jpg" alt="" style="object-position:50% 40%"></figure>
     <div class="wrap hero-inner">
       <div class="hero-panneau">
         <div class="hero-titre"><p class="hero-kicker">Collection</p><h1>Nos amis les bêtes</h1><p class="hero-tech">Huile sur toile</p></div>
-        <p class="hero-dialogue">Les animaux, compagnons et sauvages, vus par Bénédicte.</p>
-        <p>Texte de présentation à venir.</p>
         <div class="hero-pied"><span class="hero-sign">Bénédicte T-G</span><a class="btn" href="#toiles-nos-amis-les-betes">Voir les toiles</a></div>
       </div>
       <p class="hero-legende">Parade · Huile coulée, 3D</p>
@@ -915,34 +1030,40 @@ footer{background:#2B2029}
   <div class="wrap page">
     <a class="retour" href="#collections">&#8592; Toutes les collections</a>
         <div class="mur">
-      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:95.7%;aspect-ratio:505/676"><img src="img/ig-02.jpg" alt="Parade, un coq aux plumes rouges et blanches" loading="lazy"></figure></div>
+      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:94.6%;aspect-ratio:638/640"><img src="img/be-parade.jpg" alt="Parade, un coq aux plumes rouges et blanches" loading="lazy"></figure></div>
         <div class="cartel"><h3>Parade</h3><span class="prix dem">Prix sur demande</span><small>80 × 80 cm</small><small class="tech-o">Huile coulée et petite cuillère, zéro pinceau, 3D</small></div></article>
-      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:100.0%;aspect-ratio:484/611"><img src="img/ig-55.jpg" alt="Aquarium, poissons et motifs colorés" loading="lazy"></figure></div>
-        <div class="cartel"><h3>Aquarium</h3><span class="prix dem">Prix sur demande</span><small>80 × 65 cm</small><small class="tech-o">Huile, pinceaux</small></div></article>
-      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:87.2%;aspect-ratio:477/597"><img src="img/ig-33.jpg" alt="Mouton givré, un mouton à la toison bleutée" loading="lazy"></figure></div>
+      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:100.0%;aspect-ratio:780/600"><img src="img/be-trois-cochons.jpg" alt="Complicité, trois cochons bleus sur fond jaune" loading="lazy"></figure></div>
+        <div class="cartel"><h3>Complicité</h3><span class="prix dem">Prix sur demande</span><small>60 × 72 cm</small><small class="tech-o">Huile</small></div></article>
+      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:84.2%;aspect-ratio:900/750"><img src="img/be-mouton.jpg" alt="Mouton givré, un mouton à la toison bleutée au milieu du troupeau" loading="lazy"></figure></div>
         <div class="cartel"><h3>Mouton givré</h3><span class="prix dem">Prix sur demande</span><small>48 × 60 cm</small><small class="tech-o">Huile</small></div></article>
-      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:79.5%;aspect-ratio:506/676"><img src="img/ig-12.jpg" alt="So Chic, un cochon bleu vu de face" loading="lazy"></figure></div>
+      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:68.5%;aspect-ratio:532/640"><img src="img/be-so-chic.jpg" alt="So Chic, un cochon bleu vu de face" loading="lazy"></figure></div>
         <div class="cartel"><h3>So Chic</h3><span class="prix dem">Prix sur demande</span><small>55 × 45 cm</small><small class="tech-o">Huile</small></div></article>
-      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:67.7%;aspect-ratio:505/676"><img src="img/ig-54.jpg" alt="Fourmis, deux fourmis sur fond vert" loading="lazy"></figure></div>
+      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:66.6%;aspect-ratio:634/640"><img src="img/be-fourmis.jpg" alt="Fourmis, deux fourmis sur fond vert et jaune" loading="lazy"></figure></div>
         <div class="cartel"><h3>Fourmis</h3><span class="prix dem">Prix sur demande</span><small>40 × 40 cm</small><small class="tech-o">Huile, couteaux</small></div></article>
-      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:68.5%;aspect-ratio:505/676"><img src="img/ig-46.jpg" alt="Pilou Le Baron, un petit chien blanc couché" loading="lazy"></figure></div>
+      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:67.5%;aspect-ratio:640/634"><img src="img/be-doryphore.jpg" alt="Doryphore, un doryphore entouré d’une bordure d’insectes et de fleurs" loading="lazy"></figure></div>
+        <div class="cartel"><h3>Doryphore</h3><span class="prix dem">Prix sur demande</span><small>40 × 40 cm</small><small class="tech-o">Huile</small></div></article>
+      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:66.9%;aspect-ratio:638/640"><img src="img/be-papillon.jpg" alt="Libellule, un insecte aux ailes transparentes sur une feuille verte" loading="lazy"></figure></div>
+        <div class="cartel"><h3>Libellule</h3><span class="prix dem">Prix sur demande</span><small>40 × 40 cm</small><small class="tech-o">Huile</small></div></article>
+      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:57.7%;aspect-ratio:460/571"><img src="img/be-pilou.jpg" alt="Pilou Le Baron, un petit chien blanc couché" loading="lazy"></figure></div>
         <div class="cartel"><h3>Pilou Le Baron</h3><span class="prix dem">Prix sur demande</span><small>41 × 33 cm</small><small class="tech-o">Huile sur toile</small></div></article>
-      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:67.8%;aspect-ratio:506/676"><img src="img/ig-24.jpg" alt="Équilibriste, un insecte sur fond ocre" loading="lazy"></figure></div>
+      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:70.2%;aspect-ratio:640/452"><img src="img/be-equilibriste.jpg" alt="Équilibriste, un insecte sur un rocher, fond ocre" loading="lazy"></figure></div>
         <div class="cartel"><h3>Équilibriste</h3><span class="prix dem">Prix sur demande</span><small>26 × 40 cm</small><small class="tech-o">Huile</small></div></article>
+      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:73.8%;aspect-ratio:1000/660"><img src="img/be-scarabee.jpg" alt="Coccinelle, un scarabée bleu tacheté de noir sur une feuille" loading="lazy"></figure></div>
+        <div class="cartel"><h3>Coccinelle</h3><span class="prix dem">Prix sur demande</span><small>26 × 40 cm</small><small class="tech-o">Huile</small></div></article>
+      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:61.1%;aspect-ratio:640/530"><img src="img/be-chat.jpg" alt="Mogia, une tête de chat stylisée, tons dorés et violets" loading="lazy"></figure></div>
+        <div class="cartel"><h3>Mogia</h3><span class="prix dem">Prix sur demande</span><small>25 × 30 cm</small><small class="tech-o">Technique mixte</small></div></article>
     </div>
-    <p class="note">Dimensions en centimètres. Prix indicatifs.</p>
+    <p class="note">Dimensions en centimètres. Prix indicatifs. Les toiles « prix sur demande » sont estimées selon leur format, leur thème et leur technique : <a href="#contact">demandez-moi le prix</a>, je vous réponds avec plaisir.</p>
     <div class="cta-contact"><p>Un coup de cœur pour l’une de ces toiles ?</p><a class="btn" href="#contact">Contactez-moi</a></div>
   </div>
 </div>
 
 <div id="de-la-tete-aux-pieds" class="view" hidden>
-  <section class="hero-texte" aria-label="De la tête aux pieds">
+  <section class="hero-texte hero-court" aria-label="De la tête aux pieds">
     <figure class="hero-fond"><img src="img/ig-25.jpg" alt="" style="object-position:50% 50%"></figure>
     <div class="wrap hero-inner">
       <div class="hero-panneau">
         <div class="hero-titre"><p class="hero-kicker">Collection</p><h1>De la tête aux pieds</h1><p class="hero-tech">Huile sur toile</p></div>
-        <p class="hero-dialogue">Le corps et ses détails, de la tête aux pieds.</p>
-        <p>Texte de présentation à venir.</p>
         <div class="hero-pied"><span class="hero-sign">Bénédicte T-G</span><a class="btn" href="#toiles-de-la-tete-aux-pieds">Voir les toiles</a></div>
       </div>
       <p class="hero-legende">Jeu de mains · Huile sur Canson</p>
@@ -951,34 +1072,34 @@ footer{background:#2B2029}
   <div class="wrap page">
     <a class="retour" href="#collections">&#8592; Toutes les collections</a>
         <div class="mur">
-      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:100.0%;aspect-ratio:505/676"><img src="img/ig-41.jpg" alt="Brightness, un nu sombre, bras levés" loading="lazy"></figure></div>
+      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:71.4%;aspect-ratio:777/1000"><img src="img/te-nu-bleu.jpg" alt="Eurydice, un nu allongé dans une lumière bleue" loading="lazy"></figure></div>
+        <div class="cartel"><h3>Eurydice</h3><span class="prix dem">Prix sur demande</span><small>80 × 63 cm</small><small class="tech-o">Huile</small></div></article>
+      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:79.4%;aspect-ratio:1000/817"><img src="img/te-brightness.jpg" alt="Brightness, un nu sombre, bras levés" loading="lazy"></figure></div>
         <div class="cartel"><h3>Brightness</h3><span class="prix dem">Prix sur demande</span><small>50 × 61 cm</small><small class="tech-o">Huile</small></div></article>
-      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:98.3%;aspect-ratio:506/647"><img src="img/ig-51.jpg" alt="Nu’Style, une femme nue assise sur une chaise" loading="lazy"></figure></div>
-        <div class="cartel"><h3>Nu’Style</h3><span class="prix dem">Prix sur demande</span><small>46 × 55 cm</small><small class="tech-o">Huile sur toile</small></div></article>
-      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:92.3%;aspect-ratio:505/676"><img src="img/ig-25.jpg" alt="Jeu de mains, deux mains jaunes" loading="lazy"></figure></div>
+      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:65.0%;aspect-ratio:913/1000"><img src="img/te-jeu-de-mains.jpg" alt="Jeu de mains, deux mains jaunes" loading="lazy"></figure></div>
         <div class="cartel"><h3>Jeu de mains</h3><span class="prix dem">Prix sur demande</span><small>52 × 48 cm</small><small class="tech-o">Huile sur Canson</small></div></article>
-      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:99.3%;aspect-ratio:506/676"><img src="img/ig-31.jpg" alt="After, une femme assise coiffée d’un turban" loading="lazy"></figure></div>
+      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:59.8%;aspect-ratio:476/640"><img src="img/te-after.jpg" alt="After, une femme assise coiffée d’un turban" loading="lazy"></figure></div>
         <div class="cartel"><h3>After</h3><span class="prix dem">Prix sur demande</span><small>60 × 36 cm</small><small class="tech-o">Huile, d’après A. Lebedeva</small></div></article>
-      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:94.1%;aspect-ratio:505/676"><img src="img/ig-13.jpg" alt="Allégorie, des jambes au bord de l’eau et un rouge-gorge" loading="lazy"></figure></div>
-        <div class="cartel"><h3>Allégorie</h3><span class="prix dem">Prix sur demande</span><small>38 × 54 cm</small><small class="tech-o">Huile</small></div></article>
-      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:86.8%;aspect-ratio:505/676"><img src="img/ig-49.jpg" alt="Fleur de l’âge, des mains en noir et blanc tenant des fleurs" loading="lazy"></figure></div>
+      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:100.0%;aspect-ratio:1000/427"><img src="img/te-nu-jaune.jpg" alt="Dunes, un nu allongé en jaune sur fond sombre" loading="lazy"></figure></div>
+        <div class="cartel"><h3>Dunes</h3><span class="prix dem">Prix sur demande</span><small>30 × 68 cm</small><small class="tech-o">Huile</small></div></article>
+      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:74.7%;aspect-ratio:640/480"><img src="img/te-fleur-de-l-age.jpg" alt="Fleur de l’âge, des mains en noir et blanc tenant des fleurs" loading="lazy"></figure></div>
         <div class="cartel"><h3>Fleur de l’âge</h3><span class="prix dem">Prix sur demande</span><small>39 × 46 cm</small><small class="tech-o">Huile</small></div></article>
-      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:86.8%;aspect-ratio:505/676"><img src="img/ig-53.jpg" alt="Grains de sable, un pied dans l’eau sur fond doré" loading="lazy"></figure></div>
+      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:71.1%;aspect-ratio:1000/717"><img src="img/te-grains-de-sable.jpg" alt="Grains de sable, un pied dans l’eau sur fond doré" loading="lazy"></figure></div>
         <div class="cartel"><h3>Grains de sable</h3><span class="prix dem">Prix sur demande</span><small>46 × 33 cm</small><small class="tech-o">Huile, pinceaux</small></div></article>
+      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:71.2%;aspect-ratio:1000/626"><img src="img/te-regard.jpg" alt="Regard en coin, un œil bleu entre des mèches vertes et jaunes, encadré" loading="lazy"></figure></div>
+        <div class="cartel"><h3>Regard en coin</h3><span class="prix dem">Prix sur demande</span><small>27 × 54 cm</small><small class="tech-o">Huile</small></div></article>
     </div>
-    <p class="note">Dimensions en centimètres. Prix indicatifs.</p>
+    <p class="note">Dimensions en centimètres. Prix indicatifs. Les toiles « prix sur demande » sont estimées selon leur format, leur thème et leur technique : <a href="#contact">demandez-moi le prix</a>, je vous réponds avec plaisir.</p>
     <div class="cta-contact"><p>Un coup de cœur pour l’une de ces toiles ?</p><a class="btn" href="#contact">Contactez-moi</a></div>
   </div>
 </div>
 
 <div id="aromes-et-saveurs" class="view" hidden>
-  <section class="hero-texte" aria-label="Arômes et saveurs">
+  <section class="hero-texte hero-court" aria-label="Arômes et saveurs">
     <figure class="hero-fond"><img src="img/ig-17.jpg" alt="" style="object-position:50% 55%"></figure>
     <div class="wrap hero-inner">
       <div class="hero-panneau">
         <div class="hero-titre"><p class="hero-kicker">Collection</p><h1>Arômes et saveurs</h1><p class="hero-tech">Huile sur toile</p></div>
-        <p class="hero-dialogue">Fruits, mets et gourmandises, pour le plaisir des yeux.</p>
-        <p>Texte de présentation à venir.</p>
         <div class="hero-pied"><span class="hero-sign">Bénédicte T-G</span><a class="btn" href="#toiles-aromes-et-saveurs">Voir les toiles</a></div>
       </div>
       <p class="hero-legende">Petit En-cas 1 · Huile</p>
@@ -987,74 +1108,111 @@ footer{background:#2B2029}
   <div class="wrap page">
     <a class="retour" href="#collections">&#8592; Toutes les collections</a>
         <div class="mur">
-      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:100.0%;aspect-ratio:505/676"><img src="img/ig-42.jpg" alt="Fruits de saison, fruits rouges et violets" loading="lazy"></figure></div>
+      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:100.0%;aspect-ratio:1000/746"><img src="img/ar-fruits-de-saison.jpg" alt="Fruits de saison, figues, oranges et poires dans une coupe" loading="lazy"></figure></div>
         <div class="cartel"><h3>Fruits de saison</h3><span class="prix dem">Prix sur demande</span><small>39 × 54 cm</small><small class="tech-o">Huile sur Canson</small></div></article>
-      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:74.6%;aspect-ratio:506/676"><img src="img/ig-15.jpg" alt="En-cas 3, des poires et un pot orange" loading="lazy"></figure></div>
-        <div class="cartel"><h3>En-cas 3</h3><span class="prix dem">Prix sur demande</span><small>30 × 30 cm</small><small class="tech-o">Huile</small></div></article>
-      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:74.6%;aspect-ratio:506/676"><img src="img/ig-16.jpg" alt="En-cas 2, un œuf à la coque" loading="lazy"></figure></div>
-        <div class="cartel"><h3>En-cas 2</h3><span class="prix dem">Prix sur demande</span><small>30 × 30 cm</small><small class="tech-o">Huile</small></div></article>
-      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:74.5%;aspect-ratio:505/676"><img src="img/ig-17.jpg" alt="Petit En-cas 1, des cerises dans un bol turquoise" loading="lazy"></figure></div>
+      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:70.9%;aspect-ratio:640/634"><img src="img/ar-en-cas-1.jpg" alt="Petit En-cas 1, des raisins dans un bol turquoise" loading="lazy"></figure></div>
         <div class="cartel"><h3>Petit En-cas 1</h3><span class="prix dem">Prix sur demande</span><small>30 × 30 cm</small><small class="tech-o">Huile</small></div></article>
+      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:70.9%;aspect-ratio:640/634"><img src="img/ar-en-cas-2.jpg" alt="En-cas 2, un œuf à la coque dans son coquetier" loading="lazy"></figure></div>
+        <div class="cartel"><h3>En-cas 2</h3><span class="prix dem">Prix sur demande</span><small>30 × 30 cm</small><small class="tech-o">Huile</small></div></article>
+      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:70.2%;aspect-ratio:638/640"><img src="img/ar-en-cas-3.jpg" alt="En-cas 3, des poires et un pot orange" loading="lazy"></figure></div>
+        <div class="cartel"><h3>En-cas 3</h3><span class="prix dem">Prix sur demande</span><small>30 × 30 cm</small><small class="tech-o">Huile</small></div></article>
+      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:64.7%;aspect-ratio:472/640"><img src="img/ar-agapanthes.jpg" alt="Des fleurs bleues sur de hautes tiges vertes, fond rouge" loading="lazy"></figure></div>
+        <div class="cartel"><h3>Titre à venir</h3><span class="prix dem">Prix sur demande</span><small>Dimensions à venir</small><small class="tech-o">Huile</small></div></article>
+      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:65.1%;aspect-ratio:476/640"><img src="img/ar-hortensias.jpg" alt="Hortensias verts dans un vase à losanges" loading="lazy"></figure></div>
+        <div class="cartel"><h3>Hortensias</h3><span class="prix dem">Prix sur demande</span><small>Dimensions à venir</small><small class="tech-o">Huile</small></div></article>
+      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:67.8%;aspect-ratio:785/1000"><img src="img/ar-orchidees.jpg" alt="Orchidées en pot sur un tabouret, carrelage rouge" loading="lazy"></figure></div>
+        <div class="cartel"><h3>Orchidées</h3><span class="prix dem">Prix sur demande</span><small>Dimensions à venir</small><small class="tech-o">Huile</small></div></article>
+      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:70.4%;aspect-ratio:528/640"><img src="img/ar-tulipes.jpg" alt="Un bouquet de tulipes rouges et orangées" loading="lazy"></figure></div>
+        <div class="cartel"><h3>Tulipes</h3><span class="prix dem">Prix sur demande</span><small>Dimensions à venir</small><small class="tech-o">Huile</small></div></article>
+      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:65.0%;aspect-ratio:660/890"><img src="img/ar-cagettes.jpg" alt="Des cagettes empilées et un panier de fruits" loading="lazy"></figure></div>
+        <div class="cartel"><h3>Titre à venir</h3><span class="prix dem">Prix sur demande</span><small>Dimensions à venir</small><small class="tech-o">Huile</small></div></article>
     </div>
-    <p class="note">Dimensions en centimètres. Prix indicatifs.</p>
+    <p class="note">Dimensions en centimètres. Prix indicatifs. Les toiles « prix sur demande » sont estimées selon leur format, leur thème et leur technique : <a href="#contact">demandez-moi le prix</a>, je vous réponds avec plaisir.</p>
     <div class="cta-contact"><p>Un coup de cœur pour l’une de ces toiles ?</p><a class="btn" href="#contact">Contactez-moi</a></div>
   </div>
 </div>
 
 <div id="la-mer" class="view" hidden>
-  <section class="hero-texte" aria-label="La mer">
-    <figure class="hero-fond"><img src="img/ig-48.jpg" alt="" style="object-position:50% 50%"></figure>
+  <section class="hero-texte hero-court" aria-label="Maritime">
+    <figure class="hero-fond"><img src="img/mar-voiliers.jpg" alt="" style="object-position:50% 50%"></figure>
     <div class="wrap hero-inner">
       <div class="hero-panneau">
-        <div class="hero-titre"><p class="hero-kicker">Collection</p><h1>La mer</h1><p class="hero-tech">Huile sur toile</p></div>
-        <p class="hero-dialogue">Vagues, rivages et horizons marins.</p>
-        <p>Texte de présentation à venir.</p>
+        <div class="hero-titre"><p class="hero-kicker">Collection</p><h1>Maritime</h1><p class="hero-tech">Huile sur toile</p></div>
         <div class="hero-pied"><span class="hero-sign">Bénédicte T-G</span><a class="btn" href="#toiles-la-mer">Voir les toiles</a></div>
       </div>
-      <p class="hero-legende">Reflets · Huile sur Canson</p>
+      
     </div>
   </section>
   <div class="wrap page">
     <a class="retour" href="#collections">&#8592; Toutes les collections</a>
         <div class="mur">
-      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:100.0%;aspect-ratio:502/528"><img src="img/ig-48.jpg" alt="Reflets, deux silhouettes dans les vagues" loading="lazy"></figure></div>
+      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:80.0%;aspect-ratio:1000/812"><img src="img/mar-aquarium.jpg" alt="Aquarium, poissons, anémones et coraux colorés, encadré" loading="lazy"></figure></div>
+        <div class="cartel"><h3>Aquarium</h3><span class="prix dem">Prix sur demande</span><small>65 × 80 cm</small><small class="tech-o">Huile, pinceaux</small></div></article>
+      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:100.0%;aspect-ratio:1000/506"><img src="img/mar-voiliers.jpg" alt="Voilures, des voiliers blancs et verts entre des rochers, eau turquoise" loading="lazy"></figure></div>
+        <div class="cartel"><h3>Voilures</h3><span class="prix dem">Prix sur demande</span><small>50 × 100 cm</small><small class="tech-o">Huile sur toile</small></div></article>
+      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:92.7%;aspect-ratio:1000/560"><img src="img/mar-triptyque.jpg" alt="Bouée rouge, triptyque de voiliers aux voiles colorées dans une mer agitée" loading="lazy"></figure></div>
+        <div class="cartel"><h3>Bouée rouge</h3><span class="prix dem">Prix sur demande</span><small>100 × 50 cm · triptyque, 3 toiles</small><small class="tech-o">Huile sur toile</small></div></article>
+      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:55.2%;aspect-ratio:458/640"><img src="img/mar-voiles-bleues.jpg" alt="Fantasmagorie, des voiles bleues, brunes et turquoise sur une mer texturée" loading="lazy"></figure></div>
+        <div class="cartel"><h3>Fantasmagorie</h3><span class="prix dem">Prix sur demande</span><small>70 × 50 cm</small><small class="tech-o">Huile, technique mixte</small></div></article>
+      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:59.7%;aspect-ratio:640/458"><img src="img/mar-reflets.jpg" alt="Reflets, deux silhouettes dans les vagues, encadré" loading="lazy"></figure></div>
         <div class="cartel"><h3>Reflets</h3><span class="prix dem">Prix sur demande</span><small>30 × 44 cm</small><small class="tech-o">Huile sur Canson</small></div></article>
     </div>
-    <p class="note">Dimensions en centimètres. Prix indicatifs.</p>
+    <p class="note">Dimensions en centimètres. Prix indicatifs. Les toiles « prix sur demande » sont estimées selon leur format, leur thème et leur technique : <a href="#contact">demandez-moi le prix</a>, je vous réponds avec plaisir.</p>
     <div class="cta-contact"><p>Un coup de cœur pour l’une de ces toiles ?</p><a class="btn" href="#contact">Contactez-moi</a></div>
   </div>
 </div>
 
-<div id="abstrait" class="view" hidden>
-  <section class="hero-texte" aria-label="Abstrait">
-    <figure class="hero-fond"><img src="img/ig-37.jpg" alt="" style="object-position:50% 50%"></figure>
+<div id="des-arbres" class="view" hidden>
+  <section class="hero-texte hero-court" aria-label="Des arbres">
+    <figure class="hero-fond"><img src="img/arb-arbre-couchant.jpg" alt="" style="object-position:50% 40%"></figure>
     <div class="wrap hero-inner">
       <div class="hero-panneau">
-        <div class="hero-titre"><p class="hero-kicker">Collection</p><h1>Abstrait</h1><p class="hero-tech">Huile sur toile</p></div>
-        <p class="hero-dialogue">Formes, matières et couleurs en liberté.</p>
-        <p>Texte de présentation à venir.</p>
-        <div class="hero-pied"><span class="hero-sign">Bénédicte T-G</span><a class="btn" href="#toiles-abstrait">Voir les toiles</a></div>
+        <div class="hero-titre"><p class="hero-kicker">Collection</p><h1>Des arbres</h1><p class="hero-tech">Huile sur toile</p></div>
+        <div class="hero-pied"><span class="hero-sign">Bénédicte T-G</span><a class="btn" href="#toiles-des-arbres">Voir les toiles</a></div>
       </div>
-      <p class="hero-legende">Fantasmagorie · Huile, technique mixte</p>
     </div>
   </section>
   <div class="wrap page">
     <a class="retour" href="#collections">&#8592; Toutes les collections</a>
-        <div class="mur">
-      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:86.3%;aspect-ratio:505/676"><img src="img/ig-26.jpg" alt="Eurydice, composition bleue" loading="lazy"></figure></div>
-        <div class="cartel"><h3>Eurydice</h3><span class="prix dem">Prix sur demande</span><small>80 × 63 cm</small><small class="tech-o">Huile</small></div></article>
-      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:100.0%;aspect-ratio:1079/913"><img src="img/micromacro.jpg" alt="Micromacro, ondulations dorées et grises" loading="lazy"></figure></div>
+    <div class="mur" id="toiles-des-arbres">
+      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:100.0%;aspect-ratio:640/539"><img src="img/arb-olivier.jpg" alt="Micromacro, un vieil olivier et le détail de son écorce, en diptyque" loading="lazy"></figure></div>
         <div class="cartel"><h3>Micromacro</h3><span class="prix">700 €</span><small>54 × 65 cm · avec cadre</small><small class="tech-o">Huile sur toile</small></div></article>
-      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:80.7%;aspect-ratio:505/676"><img src="img/ig-37.jpg" alt="Fantasmagorie, composition bleue et turquoise" loading="lazy"></figure></div>
-        <div class="cartel"><h3>Fantasmagorie</h3><span class="prix dem">Prix sur demande</span><small>70 × 50 cm</small><small class="tech-o">Huile, technique mixte</small></div></article>
-      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:76.1%;aspect-ratio:506/676"><img src="img/ig-47.jpg" alt="Sidney, composition rouge et orange" loading="lazy"></figure></div>
-        <div class="cartel"><h3>Sidney</h3><span class="prix dem">Prix sur demande</span><small>48 × 62 cm</small><small class="tech-o">Huile et collage</small></div></article>
-      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:74.7%;aspect-ratio:505/676"><img src="img/ig-14.jpg" alt="Entreglacis, entrelacs blancs sur fond bleu" loading="lazy"></figure></div>
+      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:85.5%;aspect-ratio:700/690"><img src="img/arb-arbre-couchant.jpg" alt="Hivernal, un arbre nu au bord de l’eau sous un ciel orangé" loading="lazy"></figure></div>
+        <div class="cartel"><h3>Hivernal</h3><span class="prix">650 €</span><small>50 × 50 cm · avec cadre</small><small class="tech-o">Huile sur toile</small></div></article>
+      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:62.5%;aspect-ratio:900/1521"><img src="img/arb-branches-neige.jpg" alt="Entreglacis, des branches enneigées sur un ciel bleu profond" loading="lazy"></figure></div>
         <div class="cartel"><h3>Entreglacis</h3><span class="prix dem">Prix sur demande</span><small>60 × 38 cm</small><small class="tech-o">Huile</small></div></article>
-      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:79.6%;aspect-ratio:505/676"><img src="img/ig-30.jpg" alt="Dunes, formes ocre sur fond brun" loading="lazy"></figure></div>
-        <div class="cartel"><h3>Dunes</h3><span class="prix dem">Prix sur demande</span><small>30 × 68 cm</small><small class="tech-o">Huile</small></div></article>
     </div>
-    <p class="note">Dimensions en centimètres. Prix indicatifs.</p>
+    <p class="note">Dimensions en centimètres. Prix indicatifs. Les toiles « prix sur demande » sont estimées selon leur format, leur thème et leur technique : <a href="#contact">demandez-moi le prix</a>, je vous réponds avec plaisir.</p>
+    <div class="cta-contact"><p>Un coup de cœur pour l’une de ces toiles ?</p><a class="btn" href="#contact">Contactez-moi</a></div>
+  </div>
+</div>
+
+<div id="ville-et-campagne" class="view" hidden>
+  <section class="hero-texte hero-court" aria-label="De la ville à la campagne">
+    <figure class="hero-fond"><img src="img/vc-lisboa.jpg" alt="" style="object-position:50% 45%"></figure>
+    <div class="wrap hero-inner">
+      <div class="hero-panneau">
+        <div class="hero-titre"><p class="hero-kicker">Collection</p><h1>De la ville à la campagne</h1><p class="hero-tech">Huile sur toile</p></div>
+      </div>
+    </div>
+  </section>
+  <div class="wrap page">
+    <a class="retour" href="#collections">&#8592; Toutes les collections</a>
+    <div class="mur" id="toiles-ville-et-campagne">
+      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:100.0%;aspect-ratio:640/466"><img src="img/vc-gaudi.jpg" alt="Hommage, façades et fleurs blanches inspirées de Gaudí" loading="lazy"></figure></div>
+        <div class="cartel"><h3>Hommage</h3><span class="prix dem">Prix sur demande</span><small>41 × 66 cm</small><small class="tech-o">Huile</small></div></article>
+      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:87.0%;aspect-ratio:900/900"><img src="img/vc-porte.jpg" alt="Regard sur le passé, une porte bleue sur un mur décrépi" loading="lazy"></figure></div>
+        <div class="cartel"><h3>Regard sur le passé</h3><span class="prix dem">Prix sur demande</span><small>50 × 50 cm · encadré</small><small class="tech-o">Technique mixte, collage et huile</small></div></article>
+      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:68.3%;aspect-ratio:440/640"><img src="img/vc-lisboa.jpg" alt="Lisboa, un tramway jaune dans une ruelle bleue et orangée" loading="lazy"></figure></div>
+        <div class="cartel"><h3>Lisboa</h3><span class="prix dem">Prix sur demande</span><small>54 × 38 cm</small><small class="tech-o">Huile</small></div></article>
+      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:78.0%;aspect-ratio:1000/998"><img src="img/vc-lac.jpg" alt="Grandval, un lac entre des collines vertes et brumeuses" loading="lazy"></figure></div>
+        <div class="cartel"><h3>Grandval</h3><span class="prix dem">Prix sur demande</span><small>40 × 40 cm</small><small class="tech-o">Huile</small></div></article>
+      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:63.5%;aspect-ratio:488/640"><img src="img/vc-prague.jpg" alt="La Maison dansante de Prague, un carrefour et un minibus" loading="lazy"></figure></div>
+        <div class="cartel"><h3>Titre à venir</h3><span class="prix dem">Prix sur demande</span><small>Dimensions à venir</small><small class="tech-o">Huile</small></div></article>
+      <article class="oeuvre"><div class="zone"><figure class="work toile" style="width:91.4%;aspect-ratio:1000/808"><img src="img/vc-abstrait-orange.jpg" alt="Composition de courbes rouges, orange et jaunes" loading="lazy"></figure></div>
+        <div class="cartel"><h3>Titre à venir</h3><span class="prix dem">Prix sur demande</span><small>Dimensions à venir</small><small class="tech-o">Huile</small></div></article>
+    </div>
+    <p class="note">Dimensions en centimètres. Prix indicatifs. Les toiles « prix sur demande » sont estimées selon leur format, leur thème et leur technique : <a href="#contact">demandez-moi le prix</a>, je vous réponds avec plaisir.</p>
     <div class="cta-contact"><p>Un coup de cœur pour l’une de ces toiles ?</p><a class="btn" href="#contact">Contactez-moi</a></div>
   </div>
 </div>
@@ -1079,8 +1237,8 @@ footer{background:#2B2029}
           <p class="eyebrow">Exposition en cours</p>
           <h2><span class="touche t-lav">Agence AXA P. Chabert</span></h2>
           <p class="lieu-adr">Aix-en-Provence</p>
-          <p>Une sélection de toiles des collections Sainte-Victoire, Little Sainte-Victoire et Galerie de portraits, avec les prix indiqués sur place. Le QR code affiché à côté des tableaux mène à ce site.</p>
-          <div class="lieu-oeuvres"><a href="#sainte-victoire">Sainte-Victoire</a><a href="#little-sainte-victoire">Little Sainte-Victoire</a><a href="#galerie-de-portraits">Galerie de portraits</a></div>
+          <p>Une sélection de toiles des collections Sainte-Victoire, Little Sainte-Victoire et Portrait, avec les prix indiqués sur place. Le QR code affiché à côté des tableaux mène à ce site.</p>
+          <div class="lieu-oeuvres"><a href="#sainte-victoire">Sainte-Victoire</a><a href="#little-sainte-victoire">Little Sainte-Victoire</a><a href="#galerie-de-portraits">Portrait</a></div>
         </div>
       </article>
       <article class="lieu lieu-caves">
@@ -1121,7 +1279,7 @@ footer{background:#2B2029}
   <div class="wrap pied">
     <div class="pied-id"><span class="sig" aria-hidden="true"></span><div><p class="pied-nom">Bénédicte Teyssandier-Grézard</p><p class="pied-sous">Artiste peintre · Éguilles, Aix-en-Provence</p></div></div>
     <nav class="pied-nav" aria-label="Collections">
-      <a href="#sainte-victoire">Sainte-Victoire</a><a href="#little-sainte-victoire">Little Sainte-Victoire</a><a href="#galerie-de-portraits">Galerie de portraits</a><a href="#scenes-de-vie">Scènes de vie</a><a href="#nos-amis-les-betes">Nos amis les bêtes</a><a href="#de-la-tete-aux-pieds">De la tête aux pieds</a><a href="#aromes-et-saveurs">Arômes et saveurs</a><a href="#la-mer">La mer</a><a href="#abstrait">Abstrait</a><a href="#ou-voir">Où voir mes toiles</a>
+      <a href="#sainte-victoire">Sainte-Victoire</a><a href="#little-sainte-victoire">Little Sainte-Victoire</a><a href="#galerie-de-portraits">Portrait</a><a href="#scenes-de-vie">Scènes de vie</a><a href="#de-la-tete-aux-pieds">De la tête aux pieds</a><a href="#nos-amis-les-betes">Nos amis les bêtes</a><a href="#aromes-et-saveurs">Arômes et saveurs</a><a href="#la-mer">Maritime</a><a href="#des-arbres">Des arbres</a><a href="#ville-et-campagne">De la ville à la campagne</a><a href="#ou-voir">Où voir mes toiles</a>
     </nav>
     <div class="pied-contact"><p>06 81 37 36 48</p><p>c.b.teyssandier@free.fr</p><p><a href="https://www.instagram.com/benedictegrezard/">@benedictegrezard</a></p></div>
   </div>
@@ -1219,6 +1377,21 @@ footer{background:#2B2029}
   });
 })();
 </script>
+<script>
+/* Bio : messages qui apparaissent au défilement + repli mobile */
+(function(){
+  var fil=document.getElementById('bio-fil'); if(!fil) return;
+  var msgs=fil.querySelectorAll('.msg');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){var i=[].indexOf.call(msgs,e.target);setTimeout(function(){e.target.classList.add('vu')},Math.min(i,4)*90);io.unobserve(e.target)}})},{threshold:.15});
+    msgs.forEach(function(m){io.observe(m)});
+  } else msgs.forEach(function(m){m.classList.add('vu')});
+  fil.classList.add('replie');
+  var b=fil.querySelector('.bio2-plus');
+  b.addEventListener('click',function(){fil.classList.remove('replie');b.setAttribute('aria-expanded','true');msgs.forEach(function(m){m.classList.add('vu')})});
+})();
+</script>
+
 
 
 </body>
